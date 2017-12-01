@@ -1,0 +1,21 @@
+Info on schools / hospitals (+potential other important locations): Rotterdam POI's 
+filetype: shapefile
+
+info Neighborhoods: Rotterdam Buurt 
+filetype: shapefile
+
+Pollution levels: result_rotterdam_g599_mt2017_j2016_rpgw.csv
+filetype: .csv
+
+Neighborhood population: Population neighborhoods Rotterdam.xlsx source:https://rotterdam.buurtmonitor.nl/jive
+filetype: .xlsx
+
+Zoning plan (Bestemmingsplan): not possible to view without paying
+Found these websites on the subject:
+http://www.gis.rotterdam.nl/gisweb2/default.aspx
+http://www.gis.rotterdam.nl/rik/rik.html
+http://www.ruimtelijkeplannen.nl/web-roo/roo/bestemmingsplannen_p?tabFilter=VISIE
+https://www.planviewer.nl/bestemmingsplannen/Rotterdam
+
+Info on industry + companies location + pollution: couldn't find
+

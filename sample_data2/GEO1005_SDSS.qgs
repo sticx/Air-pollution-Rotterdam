@@ -8,21 +8,24 @@
     <layer-tree-layer expanded="1" providerKey="delimitedtext" checked="Qt::Checked" id="result_rotterdam_g599_mt2017_j2016_rpgw20171214180139071" source="file:///C:/git/Air-pollution-Rotterdam/datasets/result_rotterdam_g599_mt2017_j2016_rpgw.csv?type=csv&amp;delimiter=;&amp;wktField=geomet_wkt&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no" name="result_rotterdam_g599_mt2017_j2016_rpgw">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Schools20171203171450081" source="C:\git\Air-pollution-Rotterdam\sample_data2\layers\Schools.shp" name="Schools">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Schools20171203171450081" source="C:/git/Air-pollution-Rotterdam/sample_data2/layers/Schools.shp" name="Schools">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Hospitals20171203172511061" source="C:\git\Air-pollution-Rotterdam\sample_data2\layers\Hospitals.shp" name="Hospitals">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Hospitals20171203172511061" source="C:/git/Air-pollution-Rotterdam/sample_data2/layers/Hospitals.shp" name="Hospitals">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Nursing_homes20171203172955777" source="C:\git\Air-pollution-Rotterdam\sample_data2\layers\Nursing_homes.shp" name="Nursing_homes">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Nursing_homes20171203172955777" source="C:/git/Air-pollution-Rotterdam/sample_data2/layers/Nursing_homes.shp" name="Nursing_homes">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="OSM_2016_Rotterdam_POIs_WO20171203170750889" source="C:\git\Air-pollution-Rotterdam\datasets\OSM_2016_Rotterdam_POIs\OSM_2016_Rotterdam_POIs_WO.shp" name="OSM_2016_Rotterdam_POIs_WO">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Rotterdam_neighbourhoods_cleaned20171214200731961" source="C:/git/Air-pollution-Rotterdam/sample_data2/layers/Rotterdam_neighbourhoods_cleaned.shp" name="Rotterdam_neighbourhoods_cleaned">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="OSM_2016_Rotterdam_POIs_WO20171203170750889" source="C:/git/Air-pollution-Rotterdam/datasets/OSM_2016_Rotterdam_POIs/OSM_2016_Rotterdam_POIs_WO.shp" name="OSM_2016_Rotterdam_POIs_WO">
       <customproperties>
         <property key="showFeatureCount" value="0"/>
       </customproperties>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Rotterdam_neighbourhoods20171203150537122" source="C:\git\Air-pollution-Rotterdam\sample_data2\layers\Rotterdam_neighbourhoods.shp" name="Rotterdam_neighbourhoods">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="Rotterdam_neighbourhoods20171203150537122" source="C:/git/Air-pollution-Rotterdam/sample_data2/layers/Rotterdam_neighbourhoods.shp" name="Rotterdam_neighbourhoods">
       <customproperties/>
     </layer-tree-layer>
   </layer-tree-group>
@@ -30,10 +33,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>59416.14079470955766737</xmin>
-      <ymin>421727.40295381553005427</ymin>
-      <xmax>94538.76336093270219862</xmax>
-      <ymax>463075.10383996914606541</ymax>
+      <xmin>65217.22906701001920737</xmin>
+      <ymin>415108.60644716746173799</ymin>
+      <xmax>102095.98276154432096519</xmax>
+      <ymax>458523.69237762759439647</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -52,8 +55,10 @@
     <rendermaptile>0</rendermaptile>
     <layer_coordinate_transform_info>
       <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="OSM_2016_Rotterdam_POIs_WO20171203170750889"/>
+      <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="USER:100001" srcDatumTransform="-1" destDatumTransform="-1" layerid="Rotterdam_neighbourhoods_copy20171214184340465"/>
       <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="result_rotterdam_g599_mt2017_j2016_rpgw20171203170817043"/>
       <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="memory_20171203172312787"/>
+      <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="USER:100001" srcDatumTransform="-1" destDatumTransform="-1" layerid="Rotterdam_neighbourhoods_cleaned20171214200731961"/>
       <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="Schools20171203171450081"/>
       <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="Hospitals20171203172511061"/>
       <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="Nursing_homes20171203172955777"/>
@@ -71,6 +76,7 @@
       <item>Hospitals20171203172511061</item>
       <item>Nursing_homes20171203172955777</item>
       <item>result_rotterdam_g599_mt2017_j2016_rpgw20171214180139071</item>
+      <item>Rotterdam_neighbourhoods_cleaned20171214200731961</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
@@ -94,14 +100,19 @@
         <legendlayerfile isInOverview="0" layerid="Nursing_homes20171203172955777" visible="1"/>
       </filegroup>
     </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Rotterdam_neighbourhoods_cleaned" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="Rotterdam_neighbourhoods_cleaned20171214200731961" visible="1"/>
+      </filegroup>
+    </legendlayer>
     <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="OSM_2016_Rotterdam_POIs_WO" showFeatureCount="0">
       <filegroup open="true" hidden="false">
         <legendlayerfile isInOverview="0" layerid="OSM_2016_Rotterdam_POIs_WO20171203170750889" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Rotterdam_neighbourhoods" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Rotterdam_neighbourhoods" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="Rotterdam_neighbourhoods20171203150537122" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="Rotterdam_neighbourhoods20171203150537122" visible="0"/>
       </filegroup>
     </legendlayer>
   </legend>
@@ -1112,7 +1123,7 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;BU_CODE&quot;" sortOrder="1">
         <columns>
           <column width="-1" hidden="0" type="field" name="BU_CODE"/>
           <column width="-1" hidden="0" type="field" name="BU_NAAM"/>
@@ -1386,6 +1397,317 @@
         <default field="OPP_LAND" expression=""/>
         <default field="OPP_WATER" expression=""/>
         <default field="orig_ogc_f" expression=""/>
+      </defaults>
+      <previewExpression>COALESCE( "P_GESCHEID", '&lt;NULL>' )</previewExpression>
+    </maplayer>
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <id>Rotterdam_neighbourhoods_cleaned20171214200731961</id>
+      <datasource>./layers/Rotterdam_neighbourhoods_cleaned.shp</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Rotterdam_neighbourhoods_cleaned</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.2369,50.0087,465.658,-0.406857,0.350733,-1.87035,4.0812 +units=m +no_defs</proj4>
+          <srsid>100001</srsid>
+          <srid>0</srid>
+          <authid>USER:100001</authid>
+          <description> * Generated CRS (+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.2369,50.0087,465.658,-0.406857,0.350733,-1.87035,4.0812 +units=m +no_defs)</description>
+          <projectionacronym>sterea</projectionacronym>
+          <ellipsoidacronym>bessel</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <provider encoding="System">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="BU_CODE">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="BU_NAAM">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AANT_INW">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="P_00_14_JR">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="P_15_24_JR">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="P_25_44_JR">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="P_45_64_JR">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="P_65_EO_JR">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="BEV_DICHTH">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AANTAL_HH">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="P_EENP_HH">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="P_HH_Z_K">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="P_HH_M_K">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A_BED_BF">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A_BEDV">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="OPP_TOT">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="191,158,124,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale scalemethod="diameter"/>
+      </renderer-v2>
+      <labeling type="simple"/>
+      <customproperties/>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerTransparency>0</layerTransparency>
+      <displayfield>P_GESCHEID</displayfield>
+      <label>0</label>
+      <labelattributes>
+        <label fieldname="" text="Label"/>
+        <family fieldname="" name="MS Shell Dlg 2"/>
+        <size fieldname="" units="pt" value="12"/>
+        <bold fieldname="" on="0"/>
+        <italic fieldname="" on="0"/>
+        <underline fieldname="" on="0"/>
+        <strikeout fieldname="" on="0"/>
+        <color fieldname="" red="0" blue="0" green="0"/>
+        <x fieldname=""/>
+        <y fieldname=""/>
+        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+        <angle fieldname="" value="0" auto="0"/>
+        <alignment fieldname="" value="center"/>
+        <buffercolor fieldname="" red="255" blue="255" green="255"/>
+        <buffersize fieldname="" units="pt" value="1"/>
+        <bufferenabled fieldname="" on=""/>
+        <multilineenabled fieldname="" on=""/>
+        <selectedonly on=""/>
+      </labelattributes>
+      <annotationform></annotationform>
+      <aliases>
+        <alias field="BU_CODE" index="0" name=""/>
+        <alias field="BU_NAAM" index="1" name=""/>
+        <alias field="AANT_INW" index="2" name=""/>
+        <alias field="P_00_14_JR" index="3" name=""/>
+        <alias field="P_15_24_JR" index="4" name=""/>
+        <alias field="P_25_44_JR" index="5" name=""/>
+        <alias field="P_45_64_JR" index="6" name=""/>
+        <alias field="P_65_EO_JR" index="7" name=""/>
+        <alias field="BEV_DICHTH" index="8" name=""/>
+        <alias field="AANTAL_HH" index="9" name=""/>
+        <alias field="P_EENP_HH" index="10" name=""/>
+        <alias field="P_HH_Z_K" index="11" name=""/>
+        <alias field="P_HH_M_K" index="12" name=""/>
+        <alias field="A_BED_BF" index="13" name=""/>
+        <alias field="A_BEDV" index="14" name=""/>
+        <alias field="OPP_TOT" index="15" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;BU_CODE&quot;" sortOrder="0">
+        <columns>
+          <column width="-1" hidden="0" type="field" name="BU_CODE"/>
+          <column width="-1" hidden="0" type="field" name="BU_NAAM"/>
+          <column width="-1" hidden="0" type="field" name="WK_CODE"/>
+          <column width="-1" hidden="0" type="field" name="GM_CODE"/>
+          <column width="-1" hidden="0" type="field" name="GM_NAAM"/>
+          <column width="-1" hidden="0" type="field" name="IND_WBI"/>
+          <column width="-1" hidden="0" type="field" name="WATER"/>
+          <column width="-1" hidden="0" type="field" name="POSTCODE"/>
+          <column width="-1" hidden="0" type="field" name="DEK_PERC"/>
+          <column width="-1" hidden="0" type="field" name="OAD"/>
+          <column width="-1" hidden="0" type="field" name="STED"/>
+          <column width="-1" hidden="0" type="field" name="AANT_INW"/>
+          <column width="-1" hidden="0" type="field" name="AANT_MAN"/>
+          <column width="-1" hidden="0" type="field" name="AANT_VROUW"/>
+          <column width="-1" hidden="0" type="field" name="P_00_14_JR"/>
+          <column width="-1" hidden="0" type="field" name="P_15_24_JR"/>
+          <column width="-1" hidden="0" type="field" name="P_25_44_JR"/>
+          <column width="-1" hidden="0" type="field" name="P_45_64_JR"/>
+          <column width="-1" hidden="0" type="field" name="P_65_EO_JR"/>
+          <column width="-1" hidden="0" type="field" name="P_ONGEHUWD"/>
+          <column width="-1" hidden="0" type="field" name="P_GEHUWD"/>
+          <column width="-1" hidden="0" type="field" name="P_GESCHEID"/>
+          <column width="-1" hidden="0" type="field" name="P_VERWEDUW"/>
+          <column width="-1" hidden="0" type="field" name="GEBOO_TOT"/>
+          <column width="-1" hidden="0" type="field" name="P_GEBOO"/>
+          <column width="-1" hidden="0" type="field" name="STERFT_TOT"/>
+          <column width="-1" hidden="0" type="field" name="P_STERFT"/>
+          <column width="-1" hidden="0" type="field" name="BEV_DICHTH"/>
+          <column width="-1" hidden="0" type="field" name="AANTAL_HH"/>
+          <column width="-1" hidden="0" type="field" name="P_EENP_HH"/>
+          <column width="-1" hidden="0" type="field" name="P_HH_Z_K"/>
+          <column width="-1" hidden="0" type="field" name="P_HH_M_K"/>
+          <column width="-1" hidden="0" type="field" name="GEM_HH_GR"/>
+          <column width="-1" hidden="0" type="field" name="P_WEST_AL"/>
+          <column width="-1" hidden="0" type="field" name="P_N_W_AL"/>
+          <column width="-1" hidden="0" type="field" name="P_MAROKKO"/>
+          <column width="-1" hidden="0" type="field" name="P_ANT_ARU"/>
+          <column width="-1" hidden="0" type="field" name="P_SURINAM"/>
+          <column width="-1" hidden="0" type="field" name="P_TURKIJE"/>
+          <column width="-1" hidden="0" type="field" name="P_OVER_NW"/>
+          <column width="-1" hidden="0" type="field" name="A_BED_A"/>
+          <column width="-1" hidden="0" type="field" name="A_BED_BF"/>
+          <column width="-1" hidden="0" type="field" name="A_BED_GI"/>
+          <column width="-1" hidden="0" type="field" name="A_BED_HJ"/>
+          <column width="-1" hidden="0" type="field" name="A_BED_KL"/>
+          <column width="-1" hidden="0" type="field" name="A_BED_MN"/>
+          <column width="-1" hidden="0" type="field" name="A_BED_RU"/>
+          <column width="-1" hidden="0" type="field" name="A_BEDV"/>
+          <column width="-1" hidden="0" type="field" name="WONINGEN"/>
+          <column width="-1" hidden="0" type="field" name="WOZ"/>
+          <column width="-1" hidden="0" type="field" name="P_1GEZW"/>
+          <column width="-1" hidden="0" type="field" name="P_MGEZW"/>
+          <column width="-1" hidden="0" type="field" name="P_WONT2000"/>
+          <column width="-1" hidden="0" type="field" name="P_WONV2000"/>
+          <column width="-1" hidden="0" type="field" name="AUTO_TOT"/>
+          <column width="-1" hidden="0" type="field" name="AUTO_HH"/>
+          <column width="-1" hidden="0" type="field" name="AUTO_LAND"/>
+          <column width="-1" hidden="0" type="field" name="BEDR_AUTO"/>
+          <column width="-1" hidden="0" type="field" name="MOTOR_2W"/>
+          <column width="-1" hidden="0" type="field" name="A_LFTJ6J"/>
+          <column width="-1" hidden="0" type="field" name="A_LFTO6J"/>
+          <column width="-1" hidden="0" type="field" name="A_BST_B"/>
+          <column width="-1" hidden="0" type="field" name="A_BST_NB"/>
+          <column width="-1" hidden="0" type="field" name="AF_ZIEK_I"/>
+          <column width="-1" hidden="0" type="field" name="AV5_ZIEK_I"/>
+          <column width="-1" hidden="0" type="field" name="AV10ZIEK_I"/>
+          <column width="-1" hidden="0" type="field" name="AV20ZIEK_I"/>
+          <column width="-1" hidden="0" type="field" name="AF_ZIEK_E"/>
+          <column width="-1" hidden="0" type="field" name="AV5_ZIEK_E"/>
+          <column width="-1" hidden="0" type="field" name="AV10ZIEK_E"/>
+          <column width="-1" hidden="0" type="field" name="AV20ZIEK_E"/>
+          <column width="-1" hidden="0" type="field" name="AF_SUPERM"/>
+          <column width="-1" hidden="0" type="field" name="AV1_SUPERM"/>
+          <column width="-1" hidden="0" type="field" name="AV3_SUPERM"/>
+          <column width="-1" hidden="0" type="field" name="AV5_SUPERM"/>
+          <column width="-1" hidden="0" type="field" name="AF_DAGLMD"/>
+          <column width="-1" hidden="0" type="field" name="AV1_DAGLMD"/>
+          <column width="-1" hidden="0" type="field" name="AV3_DAGLMD"/>
+          <column width="-1" hidden="0" type="field" name="AV5_DAGLMD"/>
+          <column width="-1" hidden="0" type="field" name="AF_WARENH"/>
+          <column width="-1" hidden="0" type="field" name="AV5_WARENH"/>
+          <column width="-1" hidden="0" type="field" name="AV10WARENH"/>
+          <column width="-1" hidden="0" type="field" name="AV20WARENH"/>
+          <column width="-1" hidden="0" type="field" name="AF_CAFE"/>
+          <column width="-1" hidden="0" type="field" name="AV1_CAFE"/>
+          <column width="-1" hidden="0" type="field" name="AV3_CAFE"/>
+          <column width="-1" hidden="0" type="field" name="AV5_CAFE"/>
+          <column width="-1" hidden="0" type="field" name="AF_CAFTAR"/>
+          <column width="-1" hidden="0" type="field" name="AV1_CAFTAR"/>
+          <column width="-1" hidden="0" type="field" name="AV3_CAFTAR"/>
+          <column width="-1" hidden="0" type="field" name="AV5_CAFTAR"/>
+          <column width="-1" hidden="0" type="field" name="AF_RESTAU"/>
+          <column width="-1" hidden="0" type="field" name="AV1_RESTAU"/>
+          <column width="-1" hidden="0" type="field" name="AV3_RESTAU"/>
+          <column width="-1" hidden="0" type="field" name="AV5_RESTAU"/>
+          <column width="-1" hidden="0" type="field" name="AF_HOTEL"/>
+          <column width="-1" hidden="0" type="field" name="AV5_HOTEL"/>
+          <column width="-1" hidden="0" type="field" name="AV10_HOTEL"/>
+          <column width="-1" hidden="0" type="field" name="AV20_HOTEL"/>
+          <column width="-1" hidden="0" type="field" name="AF_KDV"/>
+          <column width="-1" hidden="0" type="field" name="AV1_KDV"/>
+          <column width="-1" hidden="0" type="field" name="AV3_KDV"/>
+          <column width="-1" hidden="0" type="field" name="AV5_KDV"/>
+          <column width="-1" hidden="0" type="field" name="AF_BSO"/>
+          <column width="-1" hidden="0" type="field" name="AV1_BSO"/>
+          <column width="-1" hidden="0" type="field" name="AV3_BSO"/>
+          <column width="-1" hidden="0" type="field" name="AV5_BSO"/>
+          <column width="-1" hidden="0" type="field" name="AF_BRANDW"/>
+          <column width="-1" hidden="0" type="field" name="AF_OPRITH"/>
+          <column width="-1" hidden="0" type="field" name="AF_TREINST"/>
+          <column width="-1" hidden="0" type="field" name="AF_OVERST"/>
+          <column width="-1" hidden="0" type="field" name="AF_ZWEMB"/>
+          <column width="-1" hidden="0" type="field" name="AF_IJSBAAN"/>
+          <column width="-1" hidden="0" type="field" name="AF_BIBLIO"/>
+          <column width="-1" hidden="0" type="field" name="AF_BIOS"/>
+          <column width="-1" hidden="0" type="field" name="AV5_BIOS"/>
+          <column width="-1" hidden="0" type="field" name="AV10_BIOS"/>
+          <column width="-1" hidden="0" type="field" name="AV20_BIOS"/>
+          <column width="-1" hidden="0" type="field" name="AF_SAUNA"/>
+          <column width="-1" hidden="0" type="field" name="AF_ZONBNK"/>
+          <column width="-1" hidden="0" type="field" name="AF_ATTRAC"/>
+          <column width="-1" hidden="0" type="field" name="AV10ATTRAC"/>
+          <column width="-1" hidden="0" type="field" name="AV20ATTRAC"/>
+          <column width="-1" hidden="0" type="field" name="AV50ATTRAC"/>
+          <column width="-1" hidden="0" type="field" name="OPP_TOT"/>
+          <column width="-1" hidden="0" type="field" name="OPP_LAND"/>
+          <column width="-1" hidden="0" type="field" name="OPP_WATER"/>
+          <column width="-1" hidden="0" type="field" name="orig_ogc_f"/>
+          <column width="-1" hidden="1" type="actions"/>
+        </columns>
+      </attributetableconfig>
+      <editform></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <defaults>
+        <default field="BU_CODE" expression=""/>
+        <default field="BU_NAAM" expression=""/>
+        <default field="AANT_INW" expression=""/>
+        <default field="P_00_14_JR" expression=""/>
+        <default field="P_15_24_JR" expression=""/>
+        <default field="P_25_44_JR" expression=""/>
+        <default field="P_45_64_JR" expression=""/>
+        <default field="P_65_EO_JR" expression=""/>
+        <default field="BEV_DICHTH" expression=""/>
+        <default field="AANTAL_HH" expression=""/>
+        <default field="P_EENP_HH" expression=""/>
+        <default field="P_HH_Z_K" expression=""/>
+        <default field="P_HH_M_K" expression=""/>
+        <default field="A_BED_BF" expression=""/>
+        <default field="A_BEDV" expression=""/>
+        <default field="OPP_TOT" expression=""/>
       </defaults>
       <previewExpression>COALESCE( "P_GESCHEID", '&lt;NULL>' )</previewExpression>
     </maplayer>
@@ -1776,7 +2098,7 @@
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <annotationform></annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="receptorid" index="0" name=""/>
         <alias field="mronde" index="1" name=""/>
@@ -1839,13 +2161,72 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="3014704">
-        <columns/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns>
+          <column width="-1" hidden="0" type="field" name="receptorid"/>
+          <column width="-1" hidden="0" type="field" name="mronde"/>
+          <column width="-1" hidden="0" type="field" name="rekenjaar"/>
+          <column width="-1" hidden="0" type="field" name="overheidid"/>
+          <column width="-1" hidden="0" type="field" name="overheid"/>
+          <column width="-1" hidden="0" type="field" name="nummer"/>
+          <column width="-1" hidden="0" type="field" name="naam"/>
+          <column width="-1" hidden="0" type="field" name="nsl"/>
+          <column width="-1" hidden="0" type="field" name="grond"/>
+          <column width="-1" hidden="0" type="field" name="opmerking"/>
+          <column width="-1" hidden="0" type="field" name="x"/>
+          <column width="-1" hidden="0" type="field" name="y"/>
+          <column width="-1" hidden="0" type="field" name="conc_no2"/>
+          <column width="-1" hidden="0" type="field" name="conc_pm10"/>
+          <column width="-1" hidden="0" type="field" name="pm10_od"/>
+          <column width="-1" hidden="0" type="field" name="conc_pm25"/>
+          <column width="-1" hidden="0" type="field" name="conc_ec"/>
+          <column width="-1" hidden="0" type="field" name="srm2_nox"/>
+          <column width="-1" hidden="0" type="field" name="srm2_no2"/>
+          <column width="-1" hidden="0" type="field" name="srm2_fno2"/>
+          <column width="-1" hidden="0" type="field" name="srm2_pm10"/>
+          <column width="-1" hidden="0" type="field" name="srm2_pm25"/>
+          <column width="-1" hidden="0" type="field" name="srm2_ec"/>
+          <column width="-1" hidden="0" type="field" name="srm1_nox"/>
+          <column width="-1" hidden="0" type="field" name="srm1_no2du"/>
+          <column width="-1" hidden="0" type="field" name="srm1_fno2"/>
+          <column width="-1" hidden="0" type="field" name="srm1_pm10"/>
+          <column width="-1" hidden="0" type="field" name="srm1_pm25"/>
+          <column width="-1" hidden="0" type="field" name="srm1_ec"/>
+          <column width="-1" hidden="0" type="field" name="wind_speed"/>
+          <column width="-1" hidden="0" type="field" name="gcn_no2"/>
+          <column width="-1" hidden="0" type="field" name="gcn_o3"/>
+          <column width="-1" hidden="0" type="field" name="gcn_pm10"/>
+          <column width="-1" hidden="0" type="field" name="gcn_pm25"/>
+          <column width="-1" hidden="0" type="field" name="gcn_ec"/>
+          <column width="-1" hidden="0" type="field" name="bg_c_no2"/>
+          <column width="-1" hidden="0" type="field" name="bg_c_o3"/>
+          <column width="-1" hidden="0" type="field" name="bg_c_pm10"/>
+          <column width="-1" hidden="0" type="field" name="bg_c_pm25"/>
+          <column width="-1" hidden="0" type="field" name="air_no2"/>
+          <column width="-1" hidden="0" type="field" name="air_o3"/>
+          <column width="-1" hidden="0" type="field" name="c_air_no2"/>
+          <column width="-1" hidden="0" type="field" name="c_air_o3"/>
+          <column width="-1" hidden="0" type="field" name="c_hwn_no2"/>
+          <column width="-1" hidden="0" type="field" name="c_hwn_o3"/>
+          <column width="-1" hidden="0" type="field" name="c_hwn_pm10"/>
+          <column width="-1" hidden="0" type="field" name="c_hwn_pm25"/>
+          <column width="-1" hidden="0" type="field" name="c_hwn_ec"/>
+          <column width="-1" hidden="0" type="field" name="achtg_no2"/>
+          <column width="-1" hidden="0" type="field" name="achtg_o3"/>
+          <column width="-1" hidden="0" type="field" name="achtg_pm10"/>
+          <column width="-1" hidden="0" type="field" name="achtg_pm25"/>
+          <column width="-1" hidden="0" type="field" name="achtg_ec"/>
+          <column width="-1" hidden="0" type="field" name="aacht_no2"/>
+          <column width="-1" hidden="0" type="field" name="aacht_o3"/>
+          <column width="-1" hidden="0" type="field" name="aacht_pm10"/>
+          <column width="-1" hidden="0" type="field" name="aacht_pm25"/>
+          <column width="-1" hidden="1" type="actions"/>
+        </columns>
       </attributetableconfig>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath></editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -1913,7 +2294,7 @@
         <default field="aacht_pm10" expression=""/>
         <default field="aacht_pm25" expression=""/>
       </defaults>
-      <previewExpression></previewExpression>
+      <previewExpression>COALESCE( "receptorid", '&lt;NULL>' )</previewExpression>
     </maplayer>
   </projectlayers>
   <properties>
@@ -1942,12 +2323,18 @@
     <Digitizing>
       <DefaultSnapToleranceUnit type="int">1</DefaultSnapToleranceUnit>
       <LayerSnappingList type="QStringList">
-        <value>Rotterdam_neighbourhoods20171203150537122</value>
+        <value>Hospitals20171203172511061</value>
+        <value>Nursing_homes20171203172955777</value>
         <value>OSM_2016_Rotterdam_POIs_WO20171203170750889</value>
-        <value>result_rotterdam_g599_mt2017_j2016_rpgw20171203170842176</value>
+        <value>Rotterdam_neighbourhoods20171203150537122</value>
         <value>Schools20171203171450081</value>
+        <value>result_rotterdam_g599_mt2017_j2016_rpgw20171214180139071</value>
+        <value>Rotterdam_neighbourhoods_cleaned20171214200731961</value>
       </LayerSnappingList>
       <LayerSnappingEnabledList type="QStringList">
+        <value>disabled</value>
+        <value>disabled</value>
+        <value>disabled</value>
         <value>disabled</value>
         <value>disabled</value>
         <value>disabled</value>
@@ -1960,8 +2347,14 @@
         <value>1</value>
         <value>1</value>
         <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
       </LayerSnappingToleranceUnitList>
       <LayerSnapToList type="QStringList">
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
@@ -1970,6 +2363,9 @@
       <DefaultSnapType type="QString">off</DefaultSnapType>
       <DefaultSnapTolerance type="double">0</DefaultSnapTolerance>
       <LayerSnappingToleranceList type="QStringList">
+        <value>0.000000</value>
+        <value>0.000000</value>
+        <value>0.000000</value>
         <value>0.000000</value>
         <value>0.000000</value>
         <value>0.000000</value>

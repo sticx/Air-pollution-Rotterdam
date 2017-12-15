@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>232</width>
-    <height>141</height>
+    <width>518</width>
+    <height>398</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -15,12 +15,75 @@
   </property>
   <widget class="QWidget" name="dockWidgetContents">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="0">
+    <item row="5" column="3">
+     <widget class="QRadioButton" name="radioButton_2">
+      <property name="text">
+       <string>Hospitals</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="3">
+     <widget class="QRadioButton" name="radioButton_3">
+      <property name="text">
+       <string>Nursing homes</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QComboBox" name="comboBox"/>
+    </item>
+    <item row="4" column="2">
      <widget class="QLabel" name="label">
       <property name="text">
-       <string>Replace this QLabel
-with the desired
-plugin content.</string>
+       <string>Select critical point to evaluate</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="3">
+     <widget class="QScrollBar" name="horizontalScrollBar">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Select pollution criteria</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="3">
+     <widget class="QRadioButton" name="radioButton">
+      <property name="text">
+       <string>Schools</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="2">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Set level max level</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="2">
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="7" column="3">
+     <widget class="QRadioButton" name="radioButton_4">
+      <property name="text">
+       <string>Natasja's house</string>
       </property>
      </widget>
     </item>

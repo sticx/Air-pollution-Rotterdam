@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/plugins/PluginForAirqInRotterdam" >
+        <file>icon.png</file>
+    </qresource>
+</RCC>

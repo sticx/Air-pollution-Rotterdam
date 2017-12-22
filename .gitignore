@@ -1,2 +1,4 @@
-
 *.qgs~
+.idea
+.workspace.xml
+help/

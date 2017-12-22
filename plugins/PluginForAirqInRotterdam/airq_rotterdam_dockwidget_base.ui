@@ -33,14 +33,14 @@
      </widget>
     </item>
     <item row="6" column="3">
-     <widget class="QCheckBox" name="checkBox_2">
+     <widget class="QCheckBox" name="checkBox_Hospitals">
       <property name="text">
        <string>Hospitals</string>
       </property>
      </widget>
     </item>
     <item row="8" column="3">
-     <widget class="QCheckBox" name="checkBox_3">
+     <widget class="QCheckBox" name="checkBox_NursingHomes">
       <property name="text">
        <string>Nursing Homes</string>
       </property>
@@ -54,14 +54,14 @@
      </widget>
     </item>
     <item row="11" column="3">
-     <widget class="QCheckBox" name="checkBox_4">
+     <widget class="QCheckBox" name="checkBox_Roads">
       <property name="text">
        <string>Roads</string>
       </property>
      </widget>
     </item>
     <item row="7" column="3">
-     <widget class="QCheckBox" name="checkBox">
+     <widget class="QCheckBox" name="checkBox_Schools">
       <property name="text">
        <string>Schools</string>
       </property>

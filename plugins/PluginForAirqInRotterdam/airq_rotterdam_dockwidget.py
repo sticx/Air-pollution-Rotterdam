@@ -34,7 +34,7 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
     closingPlugin = pyqtSignal()
 
-    def __init__(self, parent=None):
+    def __init__(self, iface, parent=None):
         """Constructor."""
         super(PluginForAirqInRotterdamDockWidget, self).__init__(parent)
         # Set up the user interface from Designer.
@@ -43,8 +43,22 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
         # http://qt-project.org/doc/qt-4.8/designer-using-a-ui-file.html
         # #widgets-and-dialogs-with-auto-connect
         self.setupUi(self)
+        self.iface=iface
+        self.plugin_dir = os.path.dirname(__file__)
+
+        #self.checkbox_Hospitals.clicked.connect(self.showHospitals)
+        #self.comboHospital.addItem(blah)
+    def showHospitals(self):
+        pass
 
     def closeEvent(self, event):
         self.closingPlugin.emit()
         event.accept()
+
+#######
+#   Data functions
+#######
+    def openScenario(self,filename=""):
+        scenario_file = (self.plugin_dir,'sample_data2','GEO1005_SDSS.qgs')
+        self.iface.addProject(unicode(scenario_file))
 

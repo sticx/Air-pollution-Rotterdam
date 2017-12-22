@@ -5,25 +5,25 @@
   <evaluateDefaultValues active="0"/>
   <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Rotterdam_neighbourhoods_cleaned20171214200731961" source="C:/git/Air-pollution-Rotterdam/sample_data2/layers/Rotterdam_neighbourhoods_cleaned.shp" name="Rotterdam_neighbourhoods_cleaned">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Rotterdam_neighbourhoods_cleaned20171214200731961" source="Rotterdam_neighbourhoods_cleaned.shp" name="Rotterdam_neighbourhoods_cleaned">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Schools20171215113059861" source="C:/git/Air-pollution-Rotterdam/sample_data2/layers/Schools.shp" name="Schools">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Schools20171215113059861" source="Schools.shp" name="Schools">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Hospitals20171215113423404" source="C:/git/Air-pollution-Rotterdam/sample_data2/layers/Hospitals.shp" name="Hospitals">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Hospitals20171215113423404" source="Hospitals.shp" name="Hospitals">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Nursing_homes20171215113342241" source="C:/git/Air-pollution-Rotterdam/sample_data2/layers/Nursing_homes.shp" name="Nursing_homes">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Nursing_homes20171215113342241" source="Nursing_homes.shp" name="Nursing_homes">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="0" providerKey="gdal" checked="Qt::Checked" id="no2_concentration20171215113949880" source="C:/git/Air-pollution-Rotterdam/sample_data2/layers/no2_concentration.tif" name="no2_concentration">
+    <layer-tree-layer expanded="0" providerKey="gdal" checked="Qt::Checked" id="no2_concentration20171215113949880" source="no2_concentration.tif" name="no2_concentration">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="0" providerKey="gdal" checked="Qt::Checked" id="pm10_concentration20171215113808971" source="C:/git/Air-pollution-Rotterdam/sample_data2/layers/pm10_concentration.tif" name="pm10_concentration">
+    <layer-tree-layer expanded="0" providerKey="gdal" checked="Qt::Checked" id="pm10_concentration20171215113808971" source="pm10_concentration.tif" name="pm10_concentration">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="0" providerKey="gdal" checked="Qt::Checked" id="pm25_concentration20171215113858048" source="C:/git/Air-pollution-Rotterdam/sample_data2/layers/pm25_concentration.tif" name="pm25_concentration">
+    <layer-tree-layer expanded="0" providerKey="gdal" checked="Qt::Checked" id="pm25_concentration20171215113858048" source="pm25_concentration.tif" name="pm25_concentration">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="POIs_Rotterdam20171215112818405" source="POIs_Rotterdam.shp" name="POIs_Rotterdam">
@@ -32,10 +32,10 @@
     <layer-tree-layer expanded="1" providerKey="delimitedtext" checked="Qt::Unchecked" id="result_rotterdam_g599_mt2017_j2016_rpgw20171214180139071" source="file:///C:/git/Air-pollution-Rotterdam/datasets/result_rotterdam_g599_mt2017_j2016_rpgw.csv?type=csv&amp;delimiter=;&amp;wktField=geomet_wkt&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no" name="result_rotterdam_g599_mt2017_j2016_rpgw">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="Rotterdam_neighbourhoods20171203150537122" source="C:/git/Air-pollution-Rotterdam/sample_data2/layers/Rotterdam_neighbourhoods.shp" name="Rotterdam_neighbourhoods">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="Rotterdam_neighbourhoods20171203150537122" source="Rotterdam_neighbourhoods.shp" name="Rotterdam_neighbourhoods">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="onderlegger20171215110350096" source="C:/git/Air-pollution-Rotterdam/sample_data2/layers/onderlegger.shp" name="onderlegger">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="onderlegger20171215110350096" source="onderlegger.shp" name="onderlegger">
       <customproperties/>
     </layer-tree-layer>
   </layer-tree-group>
@@ -179,7 +179,7 @@
   <projectlayers>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>Hospitals20171215113423404</id>
-      <datasource>./layers/Hospitals.shp</datasource>
+      <datasource>Hospitals.shp</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -312,7 +312,7 @@
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>Nursing_homes20171215113342241</id>
-      <datasource>./layers/Nursing_homes.shp</datasource>
+      <datasource>Nursing_homes.shp</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -638,7 +638,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>POIs_Rotterdam20171215112818405</id>
-      <datasource>../../../OSGEO4~1/bin/POIs_Rotterdam.shp</datasource>
+      <datasource>POIs_Rotterdam.shp</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -772,7 +772,7 @@ def my_form_open(dialog, layer, feature):
         <ymax>447000</ymax>
       </extent>
       <id>Rotterdam_neighbourhoods20171203150537122</id>
-      <datasource>./layers/Rotterdam_neighbourhoods.shp</datasource>
+      <datasource>Rotterdam_neighbourhoods.shp</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -1643,7 +1643,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>Rotterdam_neighbourhoods_cleaned20171214200731961</id>
-      <datasource>./layers/Rotterdam_neighbourhoods_cleaned.shp</datasource>
+      <datasource>Rotterdam_neighbourhoods_cleaned.shp</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -2028,7 +2028,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>Schools20171215113059861</id>
-      <datasource>./layers/Schools.shp</datasource>
+      <datasource>Schools.shp</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -2167,7 +2167,7 @@ def my_form_open(dialog, layer, feature):
         <ymax>445656.99970162543468177</ymax>
       </extent>
       <id>no2_concentration20171215113949880</id>
-      <datasource>./layers/no2_concentration.tif</datasource>
+      <datasource>no2_concentration.tif</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -2216,7 +2216,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>onderlegger20171215110350096</id>
-      <datasource>./layers/onderlegger.shp</datasource>
+      <datasource>onderlegger.shp</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -2963,7 +2963,7 @@ def my_form_open(dialog, layer, feature):
         <ymax>445656.99970162543468177</ymax>
       </extent>
       <id>pm10_concentration20171215113808971</id>
-      <datasource>./layers/pm10_concentration.tif</datasource>
+      <datasource>pm10_concentration.tif</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -3018,7 +3018,7 @@ def my_form_open(dialog, layer, feature):
         <ymax>445656.99970162543468177</ymax>
       </extent>
       <id>pm25_concentration20171215113858048</id>
-      <datasource>./layers/pm25_concentration.tif</datasource>
+      <datasource>pm25_concentration.tif</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -3073,7 +3073,7 @@ def my_form_open(dialog, layer, feature):
         <ymax>445673.41010000201640651</ymax>
       </extent>
       <id>result_rotterdam_g599_mt2017_j2016_rpgw20171214180139071</id>
-      <datasource>file:../datasets/result_rotterdam_g599_mt2017_j2016_rpgw.csv?type=csv&amp;delimiter=;&amp;wktField=geomet_wkt&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</datasource>
+      <datasource>file:result_rotterdam_g599_mt2017_j2016_rpgw.csv?type=csv&amp;delimiter=;&amp;wktField=geomet_wkt&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</datasource>
       <keywordList>
         <value></value>
       </keywordList>

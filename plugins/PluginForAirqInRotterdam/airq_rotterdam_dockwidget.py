@@ -48,6 +48,8 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
         #self.checkbox_Hospitals.clicked.connect(self.showHospitals)
         #self.comboHospital.addItem(blah)
+        self.openScenario()
+
     def showHospitals(self):
         pass
 
@@ -58,7 +60,7 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
 #######
 #   Data functions
 #######
-    def openScenario(self,filename=""):
-        scenario_file = (self.plugin_dir,'sample_data2','GEO1005_SDSS.qgs')
+    def openScenario(self):
+        scenario_file =  os.path.join(self.plugin_dir,'sample_data2','GEO1005_SDSS.qgs')
         self.iface.addProject(unicode(scenario_file))
 

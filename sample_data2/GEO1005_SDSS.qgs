@@ -17,22 +17,22 @@
     <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Nursing_homes20171215113342241" source="C:/git/Air-pollution-Rotterdam/sample_data2/layers/Nursing_homes.shp" name="Nursing_homes">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="0" providerKey="gdal" checked="Qt::Checked" id="no2_concentration20171215113949880" source="C:/git/Air-pollution-Rotterdam/sample_data2/layers/no2_concentration.tif" name="no2_concentration">
-      <customproperties/>
-    </layer-tree-layer>
-    <layer-tree-layer expanded="0" providerKey="gdal" checked="Qt::Checked" id="pm10_concentration20171215113808971" source="C:/git/Air-pollution-Rotterdam/sample_data2/layers/pm10_concentration.tif" name="pm10_concentration">
+    <layer-tree-layer expanded="0" providerKey="gdal" checked="Qt::Unchecked" id="pm10_concentration20171215113808971" source="C:/git/Air-pollution-Rotterdam/sample_data2/layers/pm10_concentration.tif" name="pm10_concentration">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-layer expanded="0" providerKey="gdal" checked="Qt::Checked" id="pm25_concentration20171215113858048" source="C:/git/Air-pollution-Rotterdam/sample_data2/layers/pm25_concentration.tif" name="pm25_concentration">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="POIs_Rotterdam20171215112818405" source="POIs_Rotterdam.shp" name="POIs_Rotterdam">
+    <layer-tree-layer expanded="0" providerKey="gdal" checked="Qt::Checked" id="no2_concentration20171215113949880" source="C:/git/Air-pollution-Rotterdam/sample_data2/layers/no2_concentration.tif" name="no2_concentration">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="POIs_Rotterdam20171215115134847" source="C:/git/Air-pollution-Rotterdam/sample_data2/layers/POIs_Rotterdam.shp" name="POIs_Rotterdam">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-layer expanded="1" providerKey="delimitedtext" checked="Qt::Unchecked" id="result_rotterdam_g599_mt2017_j2016_rpgw20171214180139071" source="file:///C:/git/Air-pollution-Rotterdam/datasets/result_rotterdam_g599_mt2017_j2016_rpgw.csv?type=csv&amp;delimiter=;&amp;wktField=geomet_wkt&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no" name="result_rotterdam_g599_mt2017_j2016_rpgw">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="Rotterdam_neighbourhoods20171203150537122" source="C:/git/Air-pollution-Rotterdam/sample_data2/layers/Rotterdam_neighbourhoods.shp" name="Rotterdam_neighbourhoods">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Rotterdam_neighbourhoods20171203150537122" source="C:/git/Air-pollution-Rotterdam/sample_data2/layers/Rotterdam_neighbourhoods.shp" name="Rotterdam_neighbourhoods">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="onderlegger20171215110350096" source="C:/git/Air-pollution-Rotterdam/sample_data2/layers/onderlegger.shp" name="onderlegger">
@@ -43,10 +43,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>57456.50773886300157756</xmin>
-      <ymin>428718.67063065635738894</ymin>
-      <xmax>103226.00773886300157756</xmax>
-      <ymax>445896.67063065635738894</ymax>
+      <xmin>61437.26926798926433548</xmin>
+      <ymin>426536.19497835100628436</ymin>
+      <xmax>107206.76926798926433548</xmax>
+      <ymax>443714.19497835100628436</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -85,10 +85,12 @@
       <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="result_rotterdam_g599_mt2017_j2016_rpgw20171203170842176"/>
       <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="Schools20171203171450081"/>
       <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="memory_20171203172147488"/>
+      <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="POIs_Rotterdam20171215114927301"/>
       <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="Hospitals20171215113423404"/>
       <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="Hospitals20171203172511061"/>
       <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="USER:100001" srcDatumTransform="-1" destDatumTransform="-1" layerid="pm25_concentration_tin_clipped20171215100847306"/>
       <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="Schools_new20171215112153227"/>
+      <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="POIs_Rotterdam20171215115134847"/>
       <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="Nursing_homes_new20171215112731628"/>
       <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="USER:100001" srcDatumTransform="-1" destDatumTransform="-1" layerid="pm10_concentration_tin20171215103858215"/>
       <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="USER:100001" srcDatumTransform="-1" destDatumTransform="-1" layerid="no2_concentration_tin_clipped20171215102910549"/>
@@ -110,13 +112,13 @@
       <item>result_rotterdam_g599_mt2017_j2016_rpgw20171214180139071</item>
       <item>Rotterdam_neighbourhoods_cleaned20171214200731961</item>
       <item>onderlegger20171215110350096</item>
-      <item>POIs_Rotterdam20171215112818405</item>
       <item>Schools20171215113059861</item>
       <item>Nursing_homes20171215113342241</item>
       <item>Hospitals20171215113423404</item>
       <item>pm10_concentration20171215113808971</item>
       <item>pm25_concentration20171215113858048</item>
       <item>no2_concentration20171215113949880</item>
+      <item>POIs_Rotterdam20171215115134847</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
@@ -140,14 +142,9 @@
         <legendlayerfile isInOverview="0" layerid="Nursing_homes20171215113342241" visible="1"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="no2_concentration" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="pm10_concentration" showFeatureCount="0">
       <filegroup open="false" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="no2_concentration20171215113949880" visible="1"/>
-      </filegroup>
-    </legendlayer>
-    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="pm10_concentration" showFeatureCount="0">
-      <filegroup open="false" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="pm10_concentration20171215113808971" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="pm10_concentration20171215113808971" visible="0"/>
       </filegroup>
     </legendlayer>
     <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="pm25_concentration" showFeatureCount="0">
@@ -155,9 +152,14 @@
         <legendlayerfile isInOverview="0" layerid="pm25_concentration20171215113858048" visible="1"/>
       </filegroup>
     </legendlayer>
+    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="no2_concentration" showFeatureCount="0">
+      <filegroup open="false" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="no2_concentration20171215113949880" visible="1"/>
+      </filegroup>
+    </legendlayer>
     <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="POIs_Rotterdam" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="POIs_Rotterdam20171215112818405" visible="0"/>
+        <legendlayerfile isInOverview="0" layerid="POIs_Rotterdam20171215115134847" visible="0"/>
       </filegroup>
     </legendlayer>
     <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="result_rotterdam_g599_mt2017_j2016_rpgw" showFeatureCount="0">
@@ -165,9 +167,9 @@
         <legendlayerfile isInOverview="0" layerid="result_rotterdam_g599_mt2017_j2016_rpgw20171214180139071" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Rotterdam_neighbourhoods" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Rotterdam_neighbourhoods" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="Rotterdam_neighbourhoods20171203150537122" visible="0"/>
+        <legendlayerfile isInOverview="0" layerid="Rotterdam_neighbourhoods20171203150537122" visible="1"/>
       </filegroup>
     </legendlayer>
     <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="onderlegger" showFeatureCount="0">
@@ -637,8 +639,8 @@ def my_form_open(dialog, layer, feature):
       <previewExpression></previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
-      <id>POIs_Rotterdam20171215112818405</id>
-      <datasource>../../../OSGEO4~1/bin/POIs_Rotterdam.shp</datasource>
+      <id>POIs_Rotterdam20171215115134847</id>
+      <datasource>./layers/POIs_Rotterdam.shp</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -681,7 +683,7 @@ def my_form_open(dialog, layer, feature):
           <symbol alpha="1" clip_to_extent="1" type="marker" name="0">
             <layer pass="0" class="SimpleMarker" locked="0">
               <prop k="angle" v="0"/>
-              <prop k="color" v="40,26,162,255"/>
+              <prop k="color" v="244,238,111,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="circle"/>
@@ -741,7 +743,7 @@ def my_form_open(dialog, layer, feature):
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="382441728">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="1723828736">
         <columns/>
       </attributetableconfig>
       <editform></editform>
@@ -3554,10 +3556,10 @@ def my_form_open(dialog, layer, feature):
         <value>Rotterdam_neighbourhoods_cleaned20171214200731961</value>
         <value>result_rotterdam_g599_mt2017_j2016_rpgw20171214180139071</value>
         <value>onderlegger20171215110350096</value>
-        <value>POIs_Rotterdam20171215112818405</value>
         <value>Schools20171215113059861</value>
         <value>Nursing_homes20171215113342241</value>
         <value>Hospitals20171215113423404</value>
+        <value>POIs_Rotterdam20171215115134847</value>
       </LayerSnappingList>
       <LayerSnappingEnabledList type="QStringList">
         <value>disabled</value>

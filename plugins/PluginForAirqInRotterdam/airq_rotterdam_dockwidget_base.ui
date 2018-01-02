@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>518</width>
-    <height>398</height>
+    <width>301</width>
+    <height>407</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -15,29 +15,15 @@
   </property>
   <widget class="QWidget" name="dockWidgetContents">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="5" column="3">
-     <widget class="QRadioButton" name="radioButton_2">
+    <item row="2" column="3">
+     <widget class="QLabel" name="label_3">
       <property name="text">
-       <string>Hospitals</string>
-      </property>
-     </widget>
-    </item>
-    <item row="6" column="3">
-     <widget class="QRadioButton" name="radioButton_3">
-      <property name="text">
-       <string>Nursing homes</string>
+       <string>Set level max level</string>
       </property>
      </widget>
     </item>
     <item row="1" column="3">
      <widget class="QComboBox" name="comboBox"/>
-    </item>
-    <item row="4" column="2">
-     <widget class="QLabel" name="label">
-      <property name="text">
-       <string>Select critical point to evaluate</string>
-      </property>
-     </widget>
     </item>
     <item row="3" column="3">
      <widget class="QScrollBar" name="horizontalScrollBar">
@@ -46,28 +32,48 @@
       </property>
      </widget>
     </item>
-    <item row="1" column="2">
+    <item row="6" column="3">
+     <widget class="QCheckBox" name="checkBox_Hospitals">
+      <property name="text">
+       <string>Hospitals</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="3">
+     <widget class="QCheckBox" name="checkBox_NursingHomes">
+      <property name="text">
+       <string>Nursing Homes</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
      <widget class="QLabel" name="label_2">
       <property name="text">
        <string>Select pollution criteria</string>
       </property>
      </widget>
     </item>
-    <item row="4" column="3">
-     <widget class="QRadioButton" name="radioButton">
+    <item row="11" column="3">
+     <widget class="QCheckBox" name="checkBox_Roads">
+      <property name="text">
+       <string>Roads</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="3">
+     <widget class="QCheckBox" name="checkBox_Schools">
       <property name="text">
        <string>Schools</string>
       </property>
-     </widget>
-    </item>
-    <item row="3" column="2">
-     <widget class="QLabel" name="label_3">
-      <property name="text">
-       <string>Set level max level</string>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
       </property>
      </widget>
     </item>
-    <item row="8" column="2">
+    <item row="12" column="3">
      <spacer name="verticalSpacer">
       <property name="orientation">
        <enum>Qt::Vertical</enum>
@@ -80,10 +86,17 @@
       </property>
      </spacer>
     </item>
-    <item row="7" column="3">
-     <widget class="QRadioButton" name="radioButton_4">
+    <item row="10" column="3">
+     <widget class="QLabel" name="label_4">
       <property name="text">
-       <string>Natasja's house</string>
+       <string>Features</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="3">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Select critical point to evaluate</string>
       </property>
      </widget>
     </item>

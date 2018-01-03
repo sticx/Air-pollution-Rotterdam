@@ -45,13 +45,40 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.setupUi(self)
         self.iface=iface
         self.plugin_dir = os.path.dirname(__file__)
-
-        #self.checkbox_Hospitals.clicked.connect(self.showHospitals)
+        self.checkBoxHospitals.clicked.connect(self.showHospitals)
+        self.checkBoxSchools.clicked.connect(self.showSchools)
+        self.checkBoxNursingHomes.clicked.connect(self.showNursingHomes)
         #self.comboHospital.addItem(blah)
         self.openScenario()
+        self.initCheckBoxes()
 
-    def showHospitals(self):
-        pass
+    def initCheckBoxes(self):
+        legend = self.iface.legendInterface()
+        self.checkBoxHospitals.setChecked(legend.isLayerVisible(self.getLayer("Hospitals")))
+        self.checkBoxSchools.setChecked(legend.isLayerVisible(self.getLayer("Schools")))
+        self.checkBoxNursingHomes.setChecked(legend.isLayerVisible(self.getLayer("Nursing_homes")))
+
+    def showHospitals(self, checked):
+        layer = self.getLayer("Hospitals")
+        legend = self.iface.legendInterface()
+        legend.setLayerVisible(layer, checked)
+
+    def showSchools(self, checked):
+        layer = self.getLayer("Schools")
+        legend = self.iface.legendInterface()
+        legend.setLayerVisible(layer, checked)
+
+    def showNursingHomes(self, checked):
+        layer = self.getLayer("Nursing_homes")
+        legend = self.iface.legendInterface()
+        legend.setLayerVisible(layer, checked)
+
+    def getLayer(self, name):
+        legend = self.iface.legendInterface()
+        for layer in legend.layers():
+            if layer.name() == name:
+                return layer
+        raise KeyError("layer does not exist")
 
     def closeEvent(self, event):
         self.closingPlugin.emit()

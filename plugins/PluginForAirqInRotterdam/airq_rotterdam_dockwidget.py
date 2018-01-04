@@ -45,18 +45,40 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.setupUi(self)
         self.iface=iface
         self.plugin_dir = os.path.dirname(__file__)
-        self.checkBoxHospitals.clicked.connect(self.showHospitals)
-        self.checkBoxSchools.clicked.connect(self.showSchools)
-        self.checkBoxNursingHomes.clicked.connect(self.showNursingHomes)
         #self.comboHospital.addItem(blah)
         self.openScenario()
         self.initCheckBoxes()
+        self.initComboBox()
+
+    def initComboBox(self):
+        typeList = ["PM 2.5", "PM 10", "NO2"]
+        self.comboBoxType.insertItems(0, typeList)
+        self.updateComboBox()
+        self.comboBoxType.currentIndexChanged.connect(self.updateComboBox)
+
+    def updateComboBox(self):
+        layer = self.getLayer("pm25_concentration")
+        legend = self.iface.legendInterface()
+        legend.setLayerVisible(layer, self.comboBoxType.currentText() == "PM 2.5")
+
+        layer = self.getLayer("pm10_concentration")
+        legend = self.iface.legendInterface()
+        legend.setLayerVisible(layer, self.comboBoxType.currentText() == "PM 10")
+
+        layer = self.getLayer("no2_concentration")
+        legend = self.iface.legendInterface()
+        legend.setLayerVisible(layer, self.comboBoxType.currentText() == "NO2")
+
 
     def initCheckBoxes(self):
         legend = self.iface.legendInterface()
         self.checkBoxHospitals.setChecked(legend.isLayerVisible(self.getLayer("Hospitals")))
         self.checkBoxSchools.setChecked(legend.isLayerVisible(self.getLayer("Schools")))
         self.checkBoxNursingHomes.setChecked(legend.isLayerVisible(self.getLayer("Nursing_homes")))
+
+        self.checkBoxHospitals.clicked.connect(self.showHospitals)
+        self.checkBoxSchools.clicked.connect(self.showSchools)
+        self.checkBoxNursingHomes.clicked.connect(self.showNursingHomes)
 
     def showHospitals(self, checked):
         layer = self.getLayer("Hospitals")

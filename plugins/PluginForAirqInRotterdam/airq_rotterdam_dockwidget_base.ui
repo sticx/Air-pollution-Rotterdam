@@ -15,22 +15,28 @@
   </property>
   <widget class="QWidget" name="dockWidgetContents">
    <layout class="QGridLayout" name="gridLayout">
+    <item row="3" column="3">
+     <widget class="QSlider" name="horizontalSlider">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="tickPosition">
+       <enum>QSlider::TicksBelow</enum>
+      </property>
+      <property name="tickInterval">
+       <number>10</number>
+      </property>
+     </widget>
+    </item>
     <item row="2" column="3">
      <widget class="QLabel" name="label_3">
       <property name="text">
-       <string>Set level max level</string>
+       <string>Set maximal level</string>
       </property>
      </widget>
     </item>
     <item row="1" column="3">
-     <widget class="QComboBox" name="comboBox"/>
-    </item>
-    <item row="3" column="3">
-     <widget class="QScrollBar" name="horizontalScrollBar">
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-     </widget>
+     <widget class="QComboBox" name="comboBoxType"/>
     </item>
     <item row="6" column="3">
      <widget class="QCheckBox" name="checkBoxHospitals">
@@ -49,7 +55,7 @@
     <item row="0" column="3">
      <widget class="QLabel" name="label_2">
       <property name="text">
-       <string>Select pollution criteria</string>
+       <string>Select pollution type</string>
       </property>
      </widget>
     </item>
@@ -96,7 +102,7 @@
     <item row="5" column="3">
      <widget class="QLabel" name="label">
       <property name="text">
-       <string>Select critical point to evaluate</string>
+       <string>Select critical points</string>
       </property>
      </widget>
     </item>

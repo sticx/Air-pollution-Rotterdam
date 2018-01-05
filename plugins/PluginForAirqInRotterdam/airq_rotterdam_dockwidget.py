@@ -45,17 +45,17 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.setupUi(self)
         self.iface=iface
         self.plugin_dir = os.path.dirname(__file__)
-        #self.comboHospital.addItem(blah)
         self.openScenario()
         self.initCheckBoxes()
         self.initComboBox()
         self.initslider()
 
     def initslider(self):
-        self.updateCurrentValue()
-        self.sliderMaxLevel.sliderMoved.connect(self.updateCurrentValue)
         self.updateMinMidMax()
         self.comboBoxType.currentIndexChanged.connect(self.updateMinMidMax)
+        self.updateCurrentValue()
+        self.sliderMaxLevel.sliderMoved.connect(self.updateCurrentValue)
+        self.comboBoxType.currentIndexChanged.connect(self.updateCurrentValue)
 
     def updateCurrentValue(self):
         self.labelCurrentValue.setText("Value: " + str(self.sliderMaxLevel.sliderPosition()) + " ug/m3")

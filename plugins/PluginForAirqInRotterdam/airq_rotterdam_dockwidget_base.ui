@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>301</width>
-    <height>407</height>
+    <height>392</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -15,8 +15,51 @@
   </property>
   <widget class="QWidget" name="dockWidgetContents">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="3" column="3">
-     <widget class="QSlider" name="horizontalSlider">
+    <item row="15" column="3">
+     <spacer name="verticalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="5" column="3">
+     <widget class="QLabel" name="labelMin">
+      <property name="text">
+       <string>min</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="4">
+     <widget class="QLabel" name="labelMid">
+      <property name="text">
+       <string>mid</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="5">
+     <widget class="QLabel" name="labelMax">
+      <property name="text">
+       <string>max</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3" colspan="3">
+     <widget class="QComboBox" name="comboBoxType"/>
+    </item>
+    <item row="4" column="3" colspan="3">
+     <widget class="QSlider" name="sliderMaxLevel">
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
       </property>
@@ -28,45 +71,49 @@
       </property>
      </widget>
     </item>
-    <item row="2" column="3">
+    <item row="3" column="3" colspan="3">
      <widget class="QLabel" name="label_3">
       <property name="text">
        <string>Set maximal level</string>
       </property>
      </widget>
     </item>
-    <item row="1" column="3">
-     <widget class="QComboBox" name="comboBoxType"/>
-    </item>
-    <item row="6" column="3">
-     <widget class="QCheckBox" name="checkBoxHospitals">
-      <property name="text">
-       <string>Hospitals</string>
-      </property>
-     </widget>
-    </item>
-    <item row="8" column="3">
-     <widget class="QCheckBox" name="checkBoxNursingHomes">
-      <property name="text">
-       <string>Nursing Homes</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="3">
+    <item row="0" column="3" colspan="3">
      <widget class="QLabel" name="label_2">
       <property name="text">
        <string>Select pollution type</string>
       </property>
      </widget>
     </item>
-    <item row="11" column="3">
+    <item row="6" column="3" colspan="3">
+     <widget class="QLabel" name="labelCurrentValue">
+      <property name="text">
+       <string>value</string>
+      </property>
+     </widget>
+    </item>
+    <item row="14" column="3" colspan="3">
      <widget class="QCheckBox" name="checkBoxRoads">
       <property name="text">
        <string>Roads</string>
       </property>
      </widget>
     </item>
-    <item row="7" column="3">
+    <item row="13" column="3" colspan="3">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>Features</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="3" colspan="3">
+     <widget class="QCheckBox" name="checkBoxHospitals">
+      <property name="text">
+       <string>Hospitals</string>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="3" colspan="3">
      <widget class="QCheckBox" name="checkBoxSchools">
       <property name="text">
        <string>Schools</string>
@@ -79,27 +126,14 @@
       </property>
      </widget>
     </item>
-    <item row="12" column="3">
-     <spacer name="verticalSpacer">
-      <property name="orientation">
-       <enum>Qt::Vertical</enum>
-      </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>20</width>
-        <height>40</height>
-       </size>
-      </property>
-     </spacer>
-    </item>
-    <item row="10" column="3">
-     <widget class="QLabel" name="label_4">
+    <item row="11" column="3" colspan="3">
+     <widget class="QCheckBox" name="checkBoxNursingHomes">
       <property name="text">
-       <string>Features</string>
+       <string>Nursing Homes</string>
       </property>
      </widget>
     </item>
-    <item row="5" column="3">
+    <item row="8" column="3" colspan="3">
      <widget class="QLabel" name="label">
       <property name="text">
        <string>Select critical points</string>

@@ -49,6 +49,31 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.openScenario()
         self.initCheckBoxes()
         self.initComboBox()
+        self.initslider()
+
+    def initslider(self):
+        self.updateCurrentValue()
+        self.sliderMaxLevel.sliderMoved.connect(self.updateCurrentValue)
+        self.updateMinMidMax()
+        self.comboBoxType.currentIndexChanged.connect(self.updateMinMidMax)
+
+    def updateCurrentValue(self):
+        self.labelCurrentValue.setText("Value: " + str(self.sliderMaxLevel.sliderPosition()) + " ug/m3")
+
+    def updateMinMidMax(self):
+        if self.comboBoxType.currentText() == "PM 2.5":
+            self.sliderMaxLevel.setRange(0, 20)
+            self.sliderMaxLevel.setTickInterval(5)
+        elif self.comboBoxType.currentText() == "PM 10":
+            self.sliderMaxLevel.setRange(0, 40)
+        elif self.comboBoxType.currentText() == "NO2":
+            self.sliderMaxLevel.setRange(0, 50)
+
+        minimum = self.sliderMaxLevel.minimum()
+        maximum = self.sliderMaxLevel.maximum()
+        self.labelMin.setText(str(minimum))
+        self.labelMid.setText(str((minimum + maximum) / 2))
+        self.labelMax.setText(str(maximum))
 
     def initComboBox(self):
         typeList = ["PM 2.5", "PM 10", "NO2"]

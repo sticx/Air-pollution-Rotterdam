@@ -60,6 +60,9 @@
     </item>
     <item row="4" column="3" colspan="3">
      <widget class="QSlider" name="sliderMaxLevel">
+      <property name="pageStep">
+       <number>1</number>
+      </property>
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
       </property>

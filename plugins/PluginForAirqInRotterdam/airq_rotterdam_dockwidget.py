@@ -56,7 +56,7 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.updateMinMidMax()
         self.comboBoxType.currentIndexChanged.connect(self.updateMinMidMax)
         self.updateCurrentValue()
-        self.sliderMaxLevel.sliderMoved.connect(self.updateCurrentValue) #todo: event trigger on mouseclick
+        self.sliderMaxLevel.valueChanged.connect(self.updateCurrentValue) #todo: event trigger on mouseclick
         self.comboBoxType.currentIndexChanged.connect(self.updateCurrentValue)
         self.updateMap()
 
@@ -71,12 +71,22 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
         fcn.setColorRampItemList(lst)
         shader = QgsRasterShader()
         shader.setRasterShaderFunction(fcn)
-        layer = self.getLayer("pm25_concentration") #todo: get correct layer
+        layer = self.getCurrentLayer()
         renderer = QgsSingleBandPseudoColorRenderer(layer.dataProvider(), 1, shader)
         layer.setRenderer(renderer)
         if hasattr(layer, "setCacheImage"):
             layer.setCacheImage(None)
         layer.triggerRepaint()
+
+    def getCurrentLayer(self):
+        if self.comboBoxType.currentText() == "PM 2.5":
+            return self.getLayer("pm25_concentration")
+        elif self.comboBoxType.currentText() == "PM 10":
+            return self.getLayer("pm10_concentration")
+        elif self.comboBoxType.currentText() == "NO2":
+            return self.getLayer("no2_concentration")
+        else:
+            raise KeyError("unexpected pollution type")
 
     def updateCurrentValue(self):
         self.labelCurrentValue.setText("Value: " + str(self.sliderMaxLevel.sliderPosition()) + " ug/m3")
@@ -92,8 +102,8 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
         elif self.comboBoxType.currentText() == "NO2":
             self.sliderMaxLevel.setRange(0, 50)
             self.sliderMaxLevel.setTickInterval(10)
-        # else:
-        #     raise KeyError("unexpected pollution type:" )
+        else:
+            raise KeyError("unexpected pollution type:" )
 
         minimum = self.sliderMaxLevel.minimum()
         maximum = self.sliderMaxLevel.maximum()

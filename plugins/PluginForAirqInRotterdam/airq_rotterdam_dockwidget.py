@@ -24,7 +24,9 @@
 import os
 
 from PyQt4 import QtGui, uic
+from PyQt4.QtGui import QColor
 from PyQt4.QtCore import pyqtSignal
+from qgis.core import QgsColorRampShader, QgsRasterShader, QgsSingleBandPseudoColorRenderer
 
 FORM_CLASS, _ = uic.loadUiType(os.path.join(
     os.path.dirname(__file__), 'airq_rotterdam_dockwidget_base.ui'))
@@ -54,11 +56,31 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.updateMinMidMax()
         self.comboBoxType.currentIndexChanged.connect(self.updateMinMidMax)
         self.updateCurrentValue()
-        self.sliderMaxLevel.sliderMoved.connect(self.updateCurrentValue)
+        self.sliderMaxLevel.sliderMoved.connect(self.updateCurrentValue) #todo: event trigger on mouseclick
         self.comboBoxType.currentIndexChanged.connect(self.updateCurrentValue)
+        self.updateMap()
+
+    def updateMap(self):
+        fcn = QgsColorRampShader()
+        fcn.setColorRampType(QgsColorRampShader.INTERPOLATED)
+        maxValue = self.sliderMaxLevel.sliderPosition()
+        lst = [QgsColorRampShader.ColorRampItem(maxValue * 0.5, QColor(0, 255, 0)),
+               QgsColorRampShader.ColorRampItem(maxValue * 0.75, QColor(255, 255, 0)),
+               QgsColorRampShader.ColorRampItem(maxValue - 0.0001, QColor(255, 128, 0)),
+               QgsColorRampShader.ColorRampItem(maxValue, QColor(255, 0, 0))]
+        fcn.setColorRampItemList(lst)
+        shader = QgsRasterShader()
+        shader.setRasterShaderFunction(fcn)
+        layer = self.getLayer("pm25_concentration") #todo: get correct layer
+        renderer = QgsSingleBandPseudoColorRenderer(layer.dataProvider(), 1, shader)
+        layer.setRenderer(renderer)
+        if hasattr(layer, "setCacheImage"):
+            layer.setCacheImage(None)
+        layer.triggerRepaint()
 
     def updateCurrentValue(self):
         self.labelCurrentValue.setText("Value: " + str(self.sliderMaxLevel.sliderPosition()) + " ug/m3")
+        self.updateMap()
 
     def updateMinMidMax(self):
         if self.comboBoxType.currentText() == "PM 2.5":
@@ -66,8 +88,12 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
             self.sliderMaxLevel.setTickInterval(5)
         elif self.comboBoxType.currentText() == "PM 10":
             self.sliderMaxLevel.setRange(0, 40)
+            self.sliderMaxLevel.setTickInterval(10)
         elif self.comboBoxType.currentText() == "NO2":
             self.sliderMaxLevel.setRange(0, 50)
+            self.sliderMaxLevel.setTickInterval(10)
+        # else:
+        #     raise KeyError("unexpected pollution type:" )
 
         minimum = self.sliderMaxLevel.minimum()
         maximum = self.sliderMaxLevel.maximum()

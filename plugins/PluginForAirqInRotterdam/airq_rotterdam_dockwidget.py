@@ -56,7 +56,7 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.updateMinMidMax()
         self.comboBoxType.currentIndexChanged.connect(self.updateMinMidMax)
         self.updateCurrentValue()
-        self.sliderMaxLevel.valueChanged.connect(self.updateCurrentValue) #todo: event trigger on mouseclick
+        self.sliderMaxLevel.valueChanged.connect(self.updateCurrentValue)
         self.comboBoxType.currentIndexChanged.connect(self.updateCurrentValue)
         self.updateMap()
 
@@ -64,7 +64,8 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
         fcn = QgsColorRampShader()
         fcn.setColorRampType(QgsColorRampShader.INTERPOLATED)
         maxValue = self.sliderMaxLevel.sliderPosition()
-        lst = [QgsColorRampShader.ColorRampItem(maxValue * 0.5, QColor(0, 255, 0)),
+        lst = [QgsColorRampShader.ColorRampItem(0, QColor(128, 192, 255)),
+               QgsColorRampShader.ColorRampItem(maxValue * 0.5, QColor(0, 255, 0)),
                QgsColorRampShader.ColorRampItem(maxValue * 0.75, QColor(255, 255, 0)),
                QgsColorRampShader.ColorRampItem(maxValue - 0.0001, QColor(255, 128, 0)),
                QgsColorRampShader.ColorRampItem(maxValue, QColor(255, 0, 0))]
@@ -94,14 +95,14 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
     def updateMinMidMax(self):
         if self.comboBoxType.currentText() == "PM 2.5":
-            self.sliderMaxLevel.setRange(0, 20)
-            self.sliderMaxLevel.setTickInterval(5)
+            self.sliderMaxLevel.setRange(12, 25)
+            self.sliderMaxLevel.setTickInterval(1)
         elif self.comboBoxType.currentText() == "PM 10":
-            self.sliderMaxLevel.setRange(0, 40)
-            self.sliderMaxLevel.setTickInterval(10)
+            self.sliderMaxLevel.setRange(20, 40)
+            self.sliderMaxLevel.setTickInterval(1)
         elif self.comboBoxType.currentText() == "NO2":
-            self.sliderMaxLevel.setRange(0, 50)
-            self.sliderMaxLevel.setTickInterval(10)
+            self.sliderMaxLevel.setRange(30, 40)
+            self.sliderMaxLevel.setTickInterval(1)
         else:
             raise KeyError("unexpected pollution type:" )
 

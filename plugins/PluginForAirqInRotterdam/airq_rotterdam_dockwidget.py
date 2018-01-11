@@ -24,7 +24,7 @@
 import os
 
 from PyQt4 import QtGui, uic
-from PyQt4.QtGui import QColor
+from PyQt4.QtGui import QColor, QAction
 from PyQt4.QtCore import pyqtSignal
 from qgis.core import QgsColorRampShader, QgsRasterShader, QgsSingleBandPseudoColorRenderer
 
@@ -51,6 +51,26 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.initCheckBoxes()
         self.initComboBox()
         self.initslider()
+        self.initSelectButton()
+
+    def initSelectButton(self):
+        self.selectButton.toggled.connect(self.changeTool)
+
+
+
+    def changeTool(self, checked):
+        if checked:
+            self.iface.setActiveLayer(self.getLayer("Rotterdam_neighbourhoods_cleaned"))
+            self.iface.actionSelect().trigger()
+
+            layer = self.iface.activeLayer()
+            selected_features = layer.selectedFeatures()
+            for i in selected_features:
+                attrs = i.attributes()
+                for attr in attrs:
+                    print attr #todo
+        else:
+            self.iface.actionPan().trigger()
 
     def initslider(self):
         self.updateMinMidMax()

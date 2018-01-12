@@ -52,17 +52,20 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.initComboBox()
         self.initslider()
         self.initSelectButton()
+        self.initZoomButtons()
+
+    def initZoomButtons(self):
+        self.zoomSelectionButton.clicked.connect(self.iface.actionZoomToSelected().trigger)
+        self.fullZoomButton.clicked.connect(self.iface.actionZoomFullExtent().trigger)
 
     def initSelectButton(self):
         self.selectButton.toggled.connect(self.changeTool)
         self.getLayer("Rotterdam_neighbourhoods_cleaned").selectionChanged.connect(self.updateInfo)
 
-
     def changeTool(self, checked):
         if checked:
             self.iface.setActiveLayer(self.getLayer("Rotterdam_neighbourhoods_cleaned"))
             self.iface.actionSelect().trigger()
-
         else:
             self.iface.actionPan().trigger()
 
@@ -88,6 +91,9 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
             info += "No. of industrial businesses: {}\n".format(i.attribute("A_BED_BF"))
             info += "\n"
         info += "</pre>"
+        info = info.replace("-99999999%", "-")
+        info = info.replace("-99999999ha", "-")
+        info = info.replace("-99999999pop/km2", "-")
         self.neighbourhoodInfo.setHtml(info)
 
     def initslider(self):

@@ -55,7 +55,7 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
     def initSelectButton(self):
         self.selectButton.toggled.connect(self.changeTool)
-
+        self.getLayer("Rotterdam_neighbourhoods_cleaned").selectionChanged.connect(self.updateInfo)
 
 
     def changeTool(self, checked):
@@ -63,14 +63,32 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
             self.iface.setActiveLayer(self.getLayer("Rotterdam_neighbourhoods_cleaned"))
             self.iface.actionSelect().trigger()
 
-            layer = self.iface.activeLayer()
-            selected_features = layer.selectedFeatures()
-            for i in selected_features:
-                attrs = i.attributes()
-                for attr in attrs:
-                    print attr #todo
         else:
             self.iface.actionPan().trigger()
+
+    def updateInfo(self):
+        layer = self.getLayer("Rotterdam_neighbourhoods_cleaned")
+        selected_features = layer.selectedFeatures()
+        info = "<pre>"
+        for i in selected_features:
+            info += "<B>{}</B>\n".format(i.attribute("BU_NAAM"))
+            info += "Area: {}ha\n".format(i.attribute("OPP_TOT"))
+            info += "Population count: {}\n".format(i.attribute("AANT_INW"))
+            info += "  0-14y: {}%\n".format(i.attribute("P_00_14_JR"))
+            info += "  15-24y: {}%\n".format(i.attribute("P_15_24_JR"))
+            info += "  25-44y: {}%\n".format(i.attribute("P_25_44_JR"))
+            info += "  45-64y: {}%\n".format(i.attribute("P_45_64_JR"))
+            info += "  65+y: {}%\n".format(i.attribute("P_65_EO_JR"))
+            info += "Population density: {}pop/km2\n".format(i.attribute("BEV_DICHTH"))
+            info += "No. of households: {}\n".format(i.attribute("AANTAL_HH"))
+            info += "  single person hh: {}%\n".format(i.attribute("P_EENP_HH"))
+            info += "  mult. person hh w/o children: {}%\n".format(i.attribute("P_HH_Z_K"))
+            info += "  mult. person hh with children: {}%\n".format(i.attribute("P_HH_M_K"))
+            info += "No. of businesses: {}\n".format(i.attribute("A_BEDV"))
+            info += "No. of industrial businesses: {}\n".format(i.attribute("A_BED_BF"))
+            info += "\n"
+        info += "</pre>"
+        self.neighbourhoodInfo.setHtml(info)
 
     def initslider(self):
         self.updateMinMidMax()

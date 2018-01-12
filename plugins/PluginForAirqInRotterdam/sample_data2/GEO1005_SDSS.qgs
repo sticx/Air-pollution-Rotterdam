@@ -1,41 +1,41 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="" version="2.18.15">
+<qgis projectname="" version="2.18.14">
   <title></title>
   <autotransaction active="0"/>
   <evaluateDefaultValues active="0"/>
   <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Rotterdam_neighbourhoods_cleaned20171214200731961" source="C:/Users/HP EliteBook 8560p/.qgis2/python/plugins/PluginForAirqInRotterdam/sample_data2/Rotterdam_neighbourhoods_cleaned.shp" name="Rotterdam_neighbourhoods_cleaned">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Schools20171215113059861" source="C:/git/Air-pollution-Rotterdam/plugins/PluginForAirqInRotterdam/sample_data2/Schools.shp" name="Schools">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Schools20171215113059861" source="C:/Users/HP EliteBook 8560p/.qgis2/python/plugins/PluginForAirqInRotterdam/sample_data2/Schools.shp" name="Schools">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Hospitals20171215113423404" source="C:/git/Air-pollution-Rotterdam/plugins/PluginForAirqInRotterdam/sample_data2/Hospitals.shp" name="Hospitals">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Hospitals20171215113423404" source="C:/Users/HP EliteBook 8560p/.qgis2/python/plugins/PluginForAirqInRotterdam/sample_data2/Hospitals.shp" name="Hospitals">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Nursing_homes20171215113342241" source="C:/git/Air-pollution-Rotterdam/plugins/PluginForAirqInRotterdam/sample_data2/Nursing_homes.shp" name="Nursing_homes">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Nursing_homes20171215113342241" source="C:/Users/HP EliteBook 8560p/.qgis2/python/plugins/PluginForAirqInRotterdam/sample_data2/Nursing_homes.shp" name="Nursing_homes">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Rotterdam_neighbourhoods_cleaned20171214200731961" source="C:/git/Air-pollution-Rotterdam/plugins/PluginForAirqInRotterdam/sample_data2/Rotterdam_neighbourhoods_cleaned.shp" name="Rotterdam_neighbourhoods_cleaned">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="0" providerKey="gdal" checked="Qt::Unchecked" id="no2_concentration20171215113949880" source="C:/Users/HP EliteBook 8560p/.qgis2/python/plugins/PluginForAirqInRotterdam/sample_data2/no2_concentration.tif" name="no2_concentration">
+    <layer-tree-layer expanded="0" providerKey="gdal" checked="Qt::Unchecked" id="no2_concentration20171215113949880" source="C:/git/Air-pollution-Rotterdam/plugins/PluginForAirqInRotterdam/sample_data2/no2_concentration.tif" name="no2_concentration">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="0" providerKey="gdal" checked="Qt::Unchecked" id="pm10_concentration20171215113808971" source="C:/Users/HP EliteBook 8560p/.qgis2/python/plugins/PluginForAirqInRotterdam/sample_data2/pm10_concentration.tif" name="pm10_concentration">
+    <layer-tree-layer expanded="0" providerKey="gdal" checked="Qt::Unchecked" id="pm10_concentration20171215113808971" source="C:/git/Air-pollution-Rotterdam/plugins/PluginForAirqInRotterdam/sample_data2/pm10_concentration.tif" name="pm10_concentration">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="0" providerKey="gdal" checked="Qt::Checked" id="pm25_concentration20171215113858048" source="C:/Users/HP EliteBook 8560p/.qgis2/python/plugins/PluginForAirqInRotterdam/sample_data2/pm25_concentration.tif" name="pm25_concentration">
+    <layer-tree-layer expanded="0" providerKey="gdal" checked="Qt::Checked" id="pm25_concentration20171215113858048" source="C:/git/Air-pollution-Rotterdam/plugins/PluginForAirqInRotterdam/sample_data2/pm25_concentration.tif" name="pm25_concentration">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="POIs_Rotterdam20171215112818405" source="C:/Users/HP EliteBook 8560p/.qgis2/python/plugins/PluginForAirqInRotterdam/sample_data2/POIs_Rotterdam.shp" name="POIs_Rotterdam">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="POIs_Rotterdam20171215112818405" source="C:/git/Air-pollution-Rotterdam/plugins/PluginForAirqInRotterdam/sample_data2/POIs_Rotterdam.shp" name="POIs_Rotterdam">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="delimitedtext" checked="Qt::Unchecked" id="result_rotterdam_g599_mt2017_j2016_rpgw20171214180139071" source="file:///C:/Users/HP%20EliteBook%208560p/.qgis2/python/plugins/PluginForAirqInRotterdam/sample_data2/result_rotterdam_g599_mt2017_j2016_rpgw.csv?type=csv&amp;delimiter=;&amp;wktField=geomet_wkt&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no" name="result_rotterdam_g599_mt2017_j2016_rpgw">
+    <layer-tree-layer expanded="1" providerKey="delimitedtext" checked="Qt::Unchecked" id="result_rotterdam_g599_mt2017_j2016_rpgw20171214180139071" source="file:///C:/git/Air-pollution-Rotterdam/plugins/PluginForAirqInRotterdam/sample_data2/result_rotterdam_g599_mt2017_j2016_rpgw.csv?type=csv&amp;delimiter=;&amp;wktField=geomet_wkt&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no" name="result_rotterdam_g599_mt2017_j2016_rpgw">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="Rotterdam_neighbourhoods20171203150537122" source="C:/Users/HP EliteBook 8560p/.qgis2/python/plugins/PluginForAirqInRotterdam/sample_data2/Rotterdam_neighbourhoods.shp" name="Rotterdam_neighbourhoods">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="Rotterdam_neighbourhoods20171203150537122" source="C:/git/Air-pollution-Rotterdam/plugins/PluginForAirqInRotterdam/sample_data2/Rotterdam_neighbourhoods.shp" name="Rotterdam_neighbourhoods">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="onderlegger20171215110350096" source="C:/Users/HP EliteBook 8560p/.qgis2/python/plugins/PluginForAirqInRotterdam/sample_data2/onderlegger.shp" name="onderlegger">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="onderlegger20171215110350096" source="C:/git/Air-pollution-Rotterdam/plugins/PluginForAirqInRotterdam/sample_data2/onderlegger.shp" name="onderlegger">
       <customproperties/>
     </layer-tree-layer>
   </layer-tree-group>
@@ -43,16 +43,16 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>79347.53403791825985536</xmin>
-      <ymin>432094.28804526414023712</ymin>
-      <xmax>102232.28403791825985536</xmax>
-      <ymax>440683.28804526414023712</ymax>
+      <xmin>55800.81544189453416038</xmin>
+      <ymin>428196.28439788817195222</ymin>
+      <xmax>102135.81016845702833962</xmax>
+      <ymax>447144.81978912354679778</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
     <destinationsrs>
       <spatialrefsys>
-        <proj4>+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.2369,50.0087,465.658,-0.406857,0.350733,-1.87035,4.0812 +units=m +no_defs</proj4>
+        <proj4>+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.417,50.3319,465.552,-0.398957,0.343988,-1.8774,4.0725 +units=m +no_defs</proj4>
         <srsid>2517</srsid>
         <srid>28992</srid>
         <authid>EPSG:28992</authid>
@@ -120,11 +120,6 @@
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Rotterdam_neighbourhoods_cleaned" showFeatureCount="0">
-      <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="Rotterdam_neighbourhoods_cleaned20171214200731961" visible="1"/>
-      </filegroup>
-    </legendlayer>
     <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Schools" showFeatureCount="0">
       <filegroup open="true" hidden="false">
         <legendlayerfile isInOverview="0" layerid="Schools20171215113059861" visible="1"/>
@@ -138,6 +133,11 @@
     <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Nursing_homes" showFeatureCount="0">
       <filegroup open="true" hidden="false">
         <legendlayerfile isInOverview="0" layerid="Nursing_homes20171215113342241" visible="1"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Rotterdam_neighbourhoods_cleaned" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="Rotterdam_neighbourhoods_cleaned20171214200731961" visible="1"/>
       </filegroup>
     </legendlayer>
     <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="no2_concentration" showFeatureCount="0">
@@ -178,6 +178,12 @@
   </legend>
   <projectlayers>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>88385.40266178567253519</xmin>
+        <ymin>433456.64996513613732532</ymin>
+        <xmax>94315.74035732811898924</xmax>
+        <ymax>439711.07465293112909421</ymax>
+      </extent>
       <id>Hospitals20171215113423404</id>
       <datasource>./Hospitals.shp</datasource>
       <keywordList>
@@ -186,7 +192,7 @@
       <layername>Hospitals</layername>
       <srs>
         <spatialrefsys>
-          <proj4>+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.2369,50.0087,465.658,-0.406857,0.350733,-1.87035,4.0812 +units=m +no_defs</proj4>
+          <proj4>+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.417,50.3319,465.552,-0.398957,0.343988,-1.8774,4.0725 +units=m +no_defs</proj4>
           <srsid>2517</srsid>
           <srid>28992</srid>
           <authid>EPSG:28992</authid>
@@ -418,6 +424,7 @@
       <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
         <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="inf">
           <fontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+          <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
         <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
           <layer pass="0" class="SimpleMarker" locked="0">
@@ -501,6 +508,12 @@ def my_form_open(dialog, layer, feature):
       <previewExpression></previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>91419.74892688079853542</xmin>
+        <ymin>435116.59705149882938713</ymin>
+        <xmax>99020.63673031760845333</xmax>
+        <ymax>442035.98777044808957726</ymax>
+      </extent>
       <id>Nursing_homes20171215113342241</id>
       <datasource>./Nursing_homes.shp</datasource>
       <keywordList>
@@ -509,7 +522,7 @@ def my_form_open(dialog, layer, feature):
       <layername>Nursing_homes</layername>
       <srs>
         <spatialrefsys>
-          <proj4>+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.2369,50.0087,465.658,-0.406857,0.350733,-1.87035,4.0812 +units=m +no_defs</proj4>
+          <proj4>+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.417,50.3319,465.552,-0.398957,0.343988,-1.8774,4.0725 +units=m +no_defs</proj4>
           <srsid>2517</srsid>
           <srid>28992</srid>
           <authid>EPSG:28992</authid>
@@ -834,7 +847,7 @@ def my_form_open(dialog, layer, feature):
       <layername>POIs_Rotterdam</layername>
       <srs>
         <spatialrefsys>
-          <proj4>+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.2369,50.0087,465.658,-0.406857,0.350733,-1.87035,4.0812 +units=m +no_defs</proj4>
+          <proj4>+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.417,50.3319,465.552,-0.398957,0.343988,-1.8774,4.0725 +units=m +no_defs</proj4>
           <srsid>2517</srsid>
           <srid>28992</srid>
           <authid>EPSG:28992</authid>
@@ -968,7 +981,7 @@ def my_form_open(dialog, layer, feature):
       <layername>Rotterdam_neighbourhoods</layername>
       <srs>
         <spatialrefsys>
-          <proj4>+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.2369,50.0087,465.658,-0.406857,0.350733,-1.87035,4.0812 +units=m +no_defs</proj4>
+          <proj4>+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.417,50.3319,465.552,-0.398957,0.343988,-1.8774,4.0725 +units=m +no_defs</proj4>
           <srsid>2517</srsid>
           <srid>28992</srid>
           <authid>EPSG:28992</authid>
@@ -1831,6 +1844,12 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>COALESCE( "P_GESCHEID", '&lt;NULL>' )</previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>56904.02960205078125</xmin>
+        <ymin>428647.44000244140625</ymin>
+        <xmax>101032.59600830078125</xmax>
+        <ymax>446693.6641845703125</ymax>
+      </extent>
       <id>Rotterdam_neighbourhoods_cleaned20171214200731961</id>
       <datasource>./Rotterdam_neighbourhoods_cleaned.shp</datasource>
       <keywordList>
@@ -1839,7 +1858,7 @@ def my_form_open(dialog, layer, feature):
       <layername>Rotterdam_neighbourhoods_cleaned</layername>
       <srs>
         <spatialrefsys>
-          <proj4>+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.2369,50.0087,465.658,-0.406857,0.350733,-1.87035,4.0812 +units=m +no_defs</proj4>
+          <proj4>+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.417,50.3319,465.552,-0.398957,0.343988,-1.8774,4.0725 +units=m +no_defs</proj4>
           <srsid>2517</srsid>
           <srid>28992</srid>
           <authid>EPSG:28992</authid>
@@ -2217,6 +2236,12 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>COALESCE( "P_GESCHEID", '&lt;NULL>' )</previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>76484.8113995700259693</xmin>
+        <ymin>430298.20547433121828362</ymin>
+        <xmax>98449.40132813263335265</xmax>
+        <ymax>442143.8220735818031244</ymax>
+      </extent>
       <id>Schools20171215113059861</id>
       <datasource>./Schools.shp</datasource>
       <keywordList>
@@ -2225,7 +2250,7 @@ def my_form_open(dialog, layer, feature):
       <layername>Schools</layername>
       <srs>
         <spatialrefsys>
-          <proj4>+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.2369,50.0087,465.658,-0.406857,0.350733,-1.87035,4.0812 +units=m +no_defs</proj4>
+          <proj4>+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.417,50.3319,465.552,-0.398957,0.343988,-1.8774,4.0725 +units=m +no_defs</proj4>
           <srsid>2517</srsid>
           <srid>28992</srid>
           <authid>EPSG:28992</authid>
@@ -2457,6 +2482,7 @@ def my_form_open(dialog, layer, feature):
       <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
         <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="inf">
           <fontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+          <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
         <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
           <layer pass="0" class="SimpleMarker" locked="0">
@@ -2554,7 +2580,7 @@ def my_form_open(dialog, layer, feature):
       <layername>no2_concentration</layername>
       <srs>
         <spatialrefsys>
-          <proj4>+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.2369,50.0087,465.658,-0.406857,0.350733,-1.87035,4.0812 +units=m +no_defs</proj4>
+          <proj4>+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.417,50.3319,465.552,-0.398957,0.343988,-1.8774,4.0725 +units=m +no_defs</proj4>
           <srsid>2517</srsid>
           <srid>28992</srid>
           <authid>EPSG:28992</authid>
@@ -2595,6 +2621,12 @@ def my_form_open(dialog, layer, feature):
       <blendMode>0</blendMode>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>56904.02960205078125</xmin>
+        <ymin>428647.44000244140625</ymin>
+        <xmax>101032.59600830078125</xmax>
+        <ymax>446693.6641845703125</ymax>
+      </extent>
       <id>onderlegger20171215110350096</id>
       <datasource>./onderlegger.shp</datasource>
       <keywordList>
@@ -2603,7 +2635,7 @@ def my_form_open(dialog, layer, feature):
       <layername>onderlegger</layername>
       <srs>
         <spatialrefsys>
-          <proj4>+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.2369,50.0087,465.658,-0.406857,0.350733,-1.87035,4.0812 +units=m +no_defs</proj4>
+          <proj4>+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.417,50.3319,465.552,-0.398957,0.343988,-1.8774,4.0725 +units=m +no_defs</proj4>
           <srsid>2517</srsid>
           <srid>28992</srid>
           <authid>EPSG:28992</authid>
@@ -3350,7 +3382,7 @@ def my_form_open(dialog, layer, feature):
       <layername>pm10_concentration</layername>
       <srs>
         <spatialrefsys>
-          <proj4>+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.2369,50.0087,465.658,-0.406857,0.350733,-1.87035,4.0812 +units=m +no_defs</proj4>
+          <proj4>+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.417,50.3319,465.552,-0.398957,0.343988,-1.8774,4.0725 +units=m +no_defs</proj4>
           <srsid>2517</srsid>
           <srid>28992</srid>
           <authid>EPSG:28992</authid>
@@ -3405,7 +3437,7 @@ def my_form_open(dialog, layer, feature):
       <layername>pm25_concentration</layername>
       <srs>
         <spatialrefsys>
-          <proj4>+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.2369,50.0087,465.658,-0.406857,0.350733,-1.87035,4.0812 +units=m +no_defs</proj4>
+          <proj4>+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.417,50.3319,465.552,-0.398957,0.343988,-1.8774,4.0725 +units=m +no_defs</proj4>
           <srsid>2517</srsid>
           <srid>28992</srid>
           <authid>EPSG:28992</authid>
@@ -3430,10 +3462,11 @@ def my_form_open(dialog, layer, feature):
         <rasterrenderer opacity="1" alphaBand="-1" classificationMax="nan" classificationMinMaxOrigin="Unknown" band="1" classificationMin="nan" type="singlebandpseudocolor">
           <rastershader>
             <colorrampshader colorRampType="INTERPOLATED" clip="0">
-              <item alpha="255" value="0" label="" color="#00ff00"/>
-              <item alpha="255" value="0" label="" color="#ffff00"/>
-              <item alpha="255" value="-0.0001" label="" color="#ff8000"/>
-              <item alpha="255" value="0" label="" color="#ff0000"/>
+              <item alpha="255" value="0" label="" color="#80c0ff"/>
+              <item alpha="255" value="6" label="" color="#00ff00"/>
+              <item alpha="255" value="9" label="" color="#ffff00"/>
+              <item alpha="255" value="11.9999" label="" color="#ff8000"/>
+              <item alpha="255" value="12" label="" color="#ff0000"/>
             </colorrampshader>
           </rastershader>
         </rasterrenderer>
@@ -3458,7 +3491,7 @@ def my_form_open(dialog, layer, feature):
       <layername>result_rotterdam_g599_mt2017_j2016_rpgw</layername>
       <srs>
         <spatialrefsys>
-          <proj4>+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.2369,50.0087,465.658,-0.406857,0.350733,-1.87035,4.0812 +units=m +no_defs</proj4>
+          <proj4>+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.417,50.3319,465.552,-0.398957,0.343988,-1.8774,4.0725 +units=m +no_defs</proj4>
           <srsid>2517</srsid>
           <srid>28992</srid>
           <authid>EPSG:28992</authid>
@@ -3903,25 +3936,53 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
   </projectlayers>
   <properties>
-    <Measurement>
-      <DistanceUnits type="QString">meters</DistanceUnits>
-      <AreaUnits type="QString">m2</AreaUnits>
-    </Measurement>
-    <SpatialRefSys>
-      <ProjectCRSProj4String type="QString">+proj=longlat +datum=WGS84 +no_defs</ProjectCRSProj4String>
-      <ProjectCrs type="QString">EPSG:4326</ProjectCrs>
-      <ProjectCRSID type="int">3452</ProjectCRSID>
-      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
-    </SpatialRefSys>
+    <WMSContactPerson type="QString"></WMSContactPerson>
+    <Variables>
+      <variableNames type="QStringList"/>
+      <variableValues type="QStringList"/>
+    </Variables>
+    <WMSOnlineResource type="QString"></WMSOnlineResource>
+    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
+    <WMSContactOrganization type="QString"></WMSContactOrganization>
+    <WMSKeywordList type="QStringList">
+      <value></value>
+    </WMSKeywordList>
+    <WFSUrl type="QString"></WFSUrl>
     <Paths>
       <Absolute type="bool">false</Absolute>
     </Paths>
+    <WMSServiceTitle type="QString"></WMSServiceTitle>
+    <WFSLayers type="QStringList"/>
+    <WMSContactMail type="QString"></WMSContactMail>
+    <WMSRestrictedComposers type="QStringList"/>
+    <WMSRestrictedLayers type="QStringList"/>
+    <PositionPrecision>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+      <Automatic type="bool">true</Automatic>
+      <DegreeFormat type="QString">MU</DegreeFormat>
+    </PositionPrecision>
+    <WCSUrl type="QString"></WCSUrl>
+    <WMSContactPhone type="QString"></WMSContactPhone>
+    <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
+    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
+    <WMSContactPosition type="QString"></WMSContactPosition>
+    <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
+    <Measure>
+      <Ellipsoid type="QString">NONE</Ellipsoid>
+    </Measure>
+    <WMSPrecision type="QString">8</WMSPrecision>
+    <WMSSegmentizeFeatureInfoGeometry type="bool">false</WMSSegmentizeFeatureInfoGeometry>
+    <WFSTLayers>
+      <Insert type="QStringList"/>
+      <Update type="QStringList"/>
+      <Delete type="QStringList"/>
+    </WFSTLayers>
     <Gui>
-      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <SelectionColorBluePart type="int">255</SelectionColorBluePart>
       <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
       <CanvasColorRedPart type="int">255</CanvasColorRedPart>
       <SelectionColorRedPart type="int">255</SelectionColorRedPart>
-      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+      <SelectionColorAlphaPart type="int">128</SelectionColorAlphaPart>
       <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
       <CanvasColorBluePart type="int">255</CanvasColorBluePart>
     </Gui>
@@ -3982,13 +4043,38 @@ def my_form_open(dialog, layer, feature):
         <value>0.000000</value>
       </LayerSnappingToleranceList>
     </Digitizing>
-    <PositionPrecision>
-      <DecimalPlaces type="int">2</DecimalPlaces>
-      <Automatic type="bool">true</Automatic>
-    </PositionPrecision>
+    <Identify>
+      <disabledLayers type="QStringList"/>
+    </Identify>
+    <Macros>
+      <pythonCode type="QString"></pythonCode>
+    </Macros>
+    <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
+    <WCSLayers type="QStringList"/>
     <Legend>
       <filterByMap type="bool">false</filterByMap>
     </Legend>
+    <SpatialRefSys>
+      <ProjectCRSProj4String type="QString">+proj=longlat +datum=WGS84 +no_defs</ProjectCRSProj4String>
+      <ProjectCrs type="QString">EPSG:4326</ProjectCrs>
+      <ProjectCRSID type="int">3452</ProjectCRSID>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+    </SpatialRefSys>
+    <DefaultStyles>
+      <Fill type="QString"></Fill>
+      <Line type="QString"></Line>
+      <Marker type="QString"></Marker>
+      <RandomColors type="bool">true</RandomColors>
+      <AlphaInt type="int">255</AlphaInt>
+      <ColorRamp type="QString"></ColorRamp>
+    </DefaultStyles>
+    <WMSFees type="QString">conditions unknown</WMSFees>
+    <WMSImageQuality type="int">90</WMSImageQuality>
+    <Measurement>
+      <DistanceUnits type="QString">meters</DistanceUnits>
+      <AreaUnits type="QString">m2</AreaUnits>
+    </Measurement>
+    <WMSUrl type="QString"></WMSUrl>
   </properties>
   <visibility-presets/>
 </qgis>

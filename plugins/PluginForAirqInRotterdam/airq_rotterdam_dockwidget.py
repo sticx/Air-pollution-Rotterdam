@@ -94,6 +94,7 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
         info = info.replace("-99999999%", "-")
         info = info.replace("-99999999ha", "-")
         info = info.replace("-99999999pop/km2", "-")
+        info = info.replace("-99999999", "-")
         self.neighbourhoodInfo.setHtml(info)
 
     def initslider(self):

@@ -23,8 +23,9 @@
 
 import os
 
+import os.path
 from PyQt4 import QtGui, uic
-from PyQt4.QtGui import QColor, QAction
+from PyQt4.QtGui import QColor, QAction, QFileDialog
 from PyQt4.QtCore import pyqtSignal
 from qgis.core import QgsColorRampShader, QgsRasterShader, QgsSingleBandPseudoColorRenderer
 
@@ -53,6 +54,38 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.initslider()
         self.initSelectButton()
         self.initZoomButtons()
+        self.initExportButton()
+
+    def initExportButton(self):
+        self.buttonExport.clicked.connect(self.export)
+
+    def export(self):
+        fileName = QFileDialog.getSaveFileName(self, "Export to file", ".", "*.txt")
+        if fileName == None:
+            return
+
+        with open(fileName, "w") as fh:
+            fh.write("========================================\n"
+                     "        AIR QUALITY IN ROTTERDAM\n"
+                     "========================================\n"
+                     "\n")
+
+            fh.write("Pollution type: " + self.comboBoxType.currentText() + "\n"
+                     "Maximal level: " + str(self.sliderMaxLevel.sliderPosition()) + " ug/m3\n"
+                     "\n\n")
+
+            if self.textNotes.toPlainText() != "":
+                fh.write("               USER NOTES\n"
+                         "========================================\n" +
+                         self.textNotes.toPlainText() + "\n"
+                         "\n\n")
+
+            if self.generateInfo(False) != "":
+                fh.write("       NEIGHBOURHOOD INFORMATION\n"
+                         "========================================\n" +
+                         self.generateInfo(False) + "\n"
+                         "\n\n")
+
 
     def initZoomButtons(self):
         self.zoomSelectionButton.clicked.connect(self.iface.actionZoomToSelected().trigger)
@@ -70,11 +103,22 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
             self.iface.actionPan().trigger()
 
     def updateInfo(self):
+        info = self.generateInfo(True)
+        self.neighbourhoodInfo.setHtml(info)
+
+    def generateInfo(self, is_html):
         layer = self.getLayer("Rotterdam_neighbourhoods_cleaned")
         selected_features = layer.selectedFeatures()
-        info = "<pre>"
+        info = ""
+        if is_html:
+            info += "<pre>"
+
         for i in selected_features:
-            info += "<B>{}</B>\n".format(i.attribute("BU_NAAM"))
+            if is_html:
+                info += "<B>{}</B>\n".format(i.attribute("BU_NAAM"))
+            else:
+                info += "{}\n".format(i.attribute("BU_NAAM").upper())
+
             info += "Area: {}ha\n".format(i.attribute("OPP_TOT"))
             info += "Population count: {}\n".format(i.attribute("AANT_INW"))
             info += "  0-14y: {}%\n".format(i.attribute("P_00_14_JR"))
@@ -90,12 +134,16 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
             info += "No. of businesses: {}\n".format(i.attribute("A_BEDV"))
             info += "No. of industrial businesses: {}\n".format(i.attribute("A_BED_BF"))
             info += "\n"
-        info += "</pre>"
+
+        if is_html:
+            info += "</pre>"
+
         info = info.replace("-99999999%", "-")
         info = info.replace("-99999999ha", "-")
         info = info.replace("-99999999pop/km2", "-")
         info = info.replace("-99999999", "-")
-        self.neighbourhoodInfo.setHtml(info)
+
+        return info
 
     def initslider(self):
         self.updateMinMidMax()

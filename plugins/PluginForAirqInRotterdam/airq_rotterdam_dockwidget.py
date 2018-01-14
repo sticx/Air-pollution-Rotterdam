@@ -182,10 +182,14 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.checkBoxHospitals.setChecked(legend.isLayerVisible(self.getLayer("Hospitals")))
         self.checkBoxSchools.setChecked(legend.isLayerVisible(self.getLayer("Schools")))
         self.checkBoxNursingHomes.setChecked(legend.isLayerVisible(self.getLayer("Nursing_homes")))
+        self.checkBoxIndustry.setChecked(legend.isLayerVisible(self.getLayer("Industry")))
+        self.checkBoxRoads.setChecked(legend.isLayerVisible(self.getLayer("RoadsEastCleaned")))
 
         self.checkBoxHospitals.clicked.connect(self.showHospitals)
         self.checkBoxSchools.clicked.connect(self.showSchools)
         self.checkBoxNursingHomes.clicked.connect(self.showNursingHomes)
+        self.checkBoxIndustry.clicked.connect(self.showIndustry)
+        self.checkBoxRoads.clicked.connect(self.showRoads)
 
     def showHospitals(self, checked):
         layer = self.getLayer("Hospitals")
@@ -199,6 +203,16 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
     def showNursingHomes(self, checked):
         layer = self.getLayer("Nursing_homes")
+        legend = self.iface.legendInterface()
+        legend.setLayerVisible(layer, checked)
+
+    def showIndustry(self, checked):
+        layer = self.getLayer("Industry")
+        legend = self.iface.legendInterface()
+        legend.setLayerVisible(layer, checked)
+
+    def showRoads(self, checked):
+        layer = self.getLayer("RoadsEastCleaned")
         legend = self.iface.legendInterface()
         legend.setLayerVisible(layer, checked)
 

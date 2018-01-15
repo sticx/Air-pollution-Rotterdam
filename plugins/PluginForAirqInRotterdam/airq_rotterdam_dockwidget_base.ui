@@ -6,7 +6,6 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>298</width>
     <width>302</width>
     <height>607</height>
    </rect>
@@ -74,7 +73,6 @@
          </widget>
         </item>
         <item row="7" column="0" colspan="3">
-         <widget class="QLabel" name="label_5">
          <widget class="QLabel" name="labelGoodQuality">
           <property name="text">
            <string>Good quality</string>
@@ -270,7 +268,6 @@
          </widget>
         </item>
         <item row="7" column="3" colspan="3">
-         <widget class="QLabel" name="label_6">
          <widget class="QLabel" name="labelLegalLimit">
           <property name="text">
            <string>Legal limit</string>

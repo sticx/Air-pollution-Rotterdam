@@ -31,15 +31,15 @@
     </property>
     <property name="maximumSize">
      <size>
-      <width>280</width>
-      <height>560</height>
+      <width>1000</width>
+      <height>2000</height>
      </size>
     </property>
     <property name="autoFillBackground">
      <bool>true</bool>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="tab_1">
      <attribute name="title">

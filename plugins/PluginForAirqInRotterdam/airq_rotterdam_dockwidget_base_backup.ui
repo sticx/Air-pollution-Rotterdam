@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PluginForAirqInRotterdamDockWidgetBase</class>
+ <widget class="QDockWidget" name="PluginForAirqInRotterdamDockWidgetBase">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>304</width>
+    <height>870</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>303</width>
+    <height>792</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Plugin For Air Quality In Rotterdam</string>
+  </property>
+  <widget class="QWidget" name="dockWidgetContents">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="22" column="3" colspan="2">
+     <widget class="QLabel" name="label_8">
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Map options</string>
+      </property>
+     </widget>
+    </item>
+    <item row="23" column="3">
+     <widget class="QRadioButton" name="radioButtonSatBgOn">
+      <property name="text">
+       <string>Satellite background (internet)</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">radioGrp</string>
+      </attribute>
+     </widget>
+    </item>
+    <item row="25" column="3">
+     <widget class="QRadioButton" name="radioButtonGmapsBgOn">
+      <property name="text">
+       <string>Google Maps background (internet)</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">radioGrp</string>
+      </attribute>
+     </widget>
+    </item>
+    <item row="24" column="3">
+     <widget class="QRadioButton" name="radioButtonSatBgOff">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="text">
+       <string>Satellite background (offline)</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">radioGrp</string>
+      </attribute>
+     </widget>
+    </item>
+    <item row="33" column="6" colspan="3">
+     <widget class="QPushButton" name="buttonExport">
+      <property name="text">
+       <string>Export</string>
+      </property>
+     </widget>
+    </item>
+    <item row="19" column="3" colspan="6">
+     <widget class="QLabel" name="label_4">
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Pollution sources</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="7" colspan="2">
+     <widget class="QLabel" name="labelMax">
+      <property name="text">
+       <string>max</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="20" column="3" colspan="6">
+     <widget class="QCheckBox" name="checkBoxRoads">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="text">
+       <string>Primary roads</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="5" colspan="2">
+     <widget class="QLabel" name="labelMid">
+      <property name="text">
+       <string>mid</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="30" column="3" colspan="6">
+     <widget class="QLabel" name="label_7">
+      <property name="text">
+       <string>Neighbourhood information</string>
+      </property>
+     </widget>
+    </item>
+    <item row="21" column="3" colspan="6">
+     <widget class="QCheckBox" name="checkBoxIndustry">
+      <property name="text">
+       <string>Industry</string>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="3" colspan="3">
+     <widget class="QLabel" name="labelCurrentValue">
+      <property name="text">
+       <string>Value</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="6" colspan="3">
+     <widget class="QLabel" name="label_6">
+      <property name="text">
+       <string>Legal limit</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="32" column="6" colspan="3">
+     <widget class="QPushButton" name="fullZoomButton">
+      <property name="text">
+       <string>Zoom full</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3" colspan="6">
+     <widget class="QLabel" name="label_2">
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Select pollution type</string>
+      </property>
+     </widget>
+    </item>
+    <item row="29" column="3" colspan="6">
+     <widget class="QPushButton" name="selectButton">
+      <property name="text">
+       <string>Select neighbourhoods</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="18" column="3">
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <property name="bottomMargin">
+       <number>10</number>
+      </property>
+     </layout>
+    </item>
+    <item row="13" column="3" colspan="3">
+     <widget class="QCheckBox" name="checkBoxHospitals">
+      <property name="text">
+       <string>Hospitals</string>
+      </property>
+     </widget>
+    </item>
+    <item row="31" column="3" colspan="6">
+     <widget class="QTextBrowser" name="neighbourhoodInfo"/>
+    </item>
+    <item row="15" column="3" colspan="6">
+     <widget class="QCheckBox" name="checkBoxSchools">
+      <property name="text">
+       <string>Schools</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="32" column="3" colspan="3">
+     <widget class="QPushButton" name="zoomSelectionButton">
+      <property name="text">
+       <string>Zoom selection</string>
+      </property>
+     </widget>
+    </item>
+    <item row="12" column="3" colspan="6">
+     <widget class="QLabel" name="label">
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Select critical points</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="3" colspan="6">
+     <widget class="QSlider" name="sliderMaxLevel">
+      <property name="pageStep">
+       <number>1</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="tickPosition">
+       <enum>QSlider::TicksBelow</enum>
+      </property>
+      <property name="tickInterval">
+       <number>10</number>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="3">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="bottomMargin">
+       <number>10</number>
+      </property>
+     </layout>
+    </item>
+    <item row="5" column="3" colspan="2">
+     <widget class="QLabel" name="labelMin">
+      <property name="text">
+       <string>min</string>
+      </property>
+     </widget>
+    </item>
+    <item row="27" column="3">
+     <spacer name="verticalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="17" column="3" colspan="6">
+     <widget class="QTextBrowser" name="textNotes">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>58</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>58</height>
+       </size>
+      </property>
+      <property name="readOnly">
+       <bool>false</bool>
+      </property>
+      <property name="acceptRichText">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <property name="bottomMargin">
+       <number>10</number>
+      </property>
+     </layout>
+    </item>
+    <item row="1" column="3" colspan="6">
+     <widget class="QComboBox" name="comboBoxType"/>
+    </item>
+    <item row="9" column="3">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="bottomMargin">
+       <number>10</number>
+      </property>
+     </layout>
+    </item>
+    <item row="8" column="3" colspan="3">
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string>Good quality</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="3" colspan="6">
+     <widget class="QLabel" name="label_3">
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Set maximal level</string>
+      </property>
+     </widget>
+    </item>
+    <item row="16" column="3" colspan="6">
+     <widget class="QCheckBox" name="checkBoxNursingHomes">
+      <property name="text">
+       <string>Nursing homes</string>
+      </property>
+     </widget>
+    </item>
+    <item row="26" column="3">
+     <widget class="QRadioButton" name="radioButtonGmapsBgOff">
+      <property name="text">
+       <string>Google Maps background (offline)</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">radioGrp</string>
+      </attribute>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="radioGrp"/>
+ </buttongroups>
+</ui>

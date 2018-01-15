@@ -228,14 +228,14 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
     def initRadioButtons(self):
         legend = self.iface.legendInterface()
         # Set Default
-        self.radioButtonSatBgOn.setChecked(True)
+        self.radioButtonSatBgOff.setChecked(True)
         # Create a Group and make it exclusive
         self.radioGrp.setExclusive(True)
         # Add radio buttons to group
-        self.radioGrp.addButton(self.radioButtonSatBgOn)
-        self.radioGrp.addButton(self.radioButtonSatBgOff)
-        self.radioGrp.addButton(self.radioButtonGmapsBgOn)
-        self.radioGrp.addButton(self.radioButtonGmapsBgOff)
+        self.radioGrp.addButton(self.radioButtonSatBgOn) #online map
+        self.radioGrp.addButton(self.radioButtonSatBgOff) #offline map
+        self.radioGrp.addButton(self.radioButtonGmapsBgOn) #online map
+        self.radioGrp.addButton(self.radioButtonGmapsBgOff) #offline map
         #actions
         self.radioButtonSatBgOn.setChecked(legend.isLayerVisible(self.getLayer("Google Satellite")))
         self.radioButtonSatBgOff.setChecked(legend.isLayerVisible(self.getLayer("SatelliteBackground")))

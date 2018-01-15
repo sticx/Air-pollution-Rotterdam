@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>319</width>
+    <width>307</width>
     <height>607</height>
    </rect>
   </property>
@@ -19,8 +19,8 @@
      <widget class="QTabWidget" name="tabWidget">
       <property name="minimumSize">
        <size>
-        <width>280</width>
-        <height>530</height>
+        <width>0</width>
+        <height>400</height>
        </size>
       </property>
       <property name="maximumSize">
@@ -33,7 +33,7 @@
        <bool>true</bool>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab_1">
        <attribute name="title">
@@ -572,7 +572,7 @@
          <string>Zoom selection</string>
         </property>
        </widget>
-       <widget class="QTextBrowser" name="textNotesHospitals">
+       <widget class="QTextBrowser" name="textNotes">
         <property name="geometry">
          <rect>
           <x>11</x>
@@ -626,7 +626,7 @@
          <string>School Notes</string>
         </property>
        </widget>
-       <widget class="QTextBrowser" name="textNotesSchools">
+       <widget class="QTextBrowser" name="textNotes_3">
         <property name="geometry">
          <rect>
           <x>11</x>
@@ -654,7 +654,7 @@
          <bool>false</bool>
         </property>
        </widget>
-       <widget class="QTextBrowser" name="textNotesNursingHomes">
+       <widget class="QTextBrowser" name="textNotes_4">
         <property name="geometry">
          <rect>
           <x>11</x>

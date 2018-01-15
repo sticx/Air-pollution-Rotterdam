@@ -7,6 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>298</width>
+    <width>302</width>
     <height>607</height>
    </rect>
   </property>
@@ -74,6 +75,7 @@
         </item>
         <item row="7" column="0" colspan="3">
          <widget class="QLabel" name="label_5">
+         <widget class="QLabel" name="labelGoodQuality">
           <property name="text">
            <string>Good quality</string>
           </property>
@@ -269,6 +271,7 @@
         </item>
         <item row="7" column="3" colspan="3">
          <widget class="QLabel" name="label_6">
+         <widget class="QLabel" name="labelLegalLimit">
           <property name="text">
            <string>Legal limit</string>
           </property>
@@ -321,7 +324,7 @@
        </layout>
        <zorder>comboBoxType</zorder>
        <zorder>label_3</zorder>
-       <zorder>label_5</zorder>
+       <zorder>labelGoodQuality</zorder>
        <zorder>sliderMaxLevel</zorder>
        <zorder>labelMin</zorder>
        <zorder>labelMid</zorder>
@@ -340,7 +343,7 @@
        <zorder>radioButtonGmapsBgOn</zorder>
        <zorder>radioButtonSatBgOn</zorder>
        <zorder>radioButtonSatBgOff</zorder>
-       <zorder>label_6</zorder>
+       <zorder>labelLegalLimit</zorder>
        <zorder>verticalSpacer</zorder>
       </widget>
       <widget class="QWidget" name="tab_2">

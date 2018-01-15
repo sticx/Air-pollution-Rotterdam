@@ -48,6 +48,7 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.setupUi(self)
         self.iface=iface
         self.plugin_dir = os.path.dirname(__file__)
+        self.openScenario()
 
         if not(self.layerExists("Google Satellite")) or not(self.layerExists("Google Streets")):
             QMessageBox.warning(self, "OpenLayers Plugin not installed",
@@ -57,7 +58,6 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
             self.radioButtonSatBgOn.setEnabled(False)
             self.radioButtonGmapsBgOn.setEnabled(False)
 
-        self.openScenario()
         self.initCheckBoxes()
         self.initComboBox()
         self.initSelectButton()
@@ -88,23 +88,28 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
             if self.textNotesHospitals.toPlainText() != "":
                 fh.write("               USER NOTES\n"
                          "========================================\n"
-                         "HOSPITALS\n" +
+                         "\n"
+                         "HOSPITALS\n"
+                         "----------------------------------------\n" +
                          self.textNotesHospitals.toPlainText() + "\n"
                          "\n")
 
             if self.textNotesSchools.toPlainText() != "":
-                fh.write("SCHOOLS\n" +
+                fh.write("SCHOOLS\n"
+                         "----------------------------------------\n" +
                          self.textNotesSchools.toPlainText() + "\n"
                          "\n")
 
             if self.textNotesNursingHomes.toPlainText() != "":
-                fh.write("NURSING HOMES\n" +
+                fh.write("NURSING HOMES\n"
+                         "----------------------------------------\n" +
                          self.textNotesNursingHomes.toPlainText() + "\n"
                          "\n\n")
 
             if self.generateInfo(False) != "":
                 fh.write("       NEIGHBOURHOOD INFORMATION\n"
-                         "========================================\n" +
+                         "========================================\n"
+                         "\n" +
                          self.generateInfo(False) + "\n"
                          "\n\n")
 
@@ -142,6 +147,7 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
                 info += "<B>{}</B>\n".format(i.attribute("BU_NAAM"))
             else:
                 info += "{}\n".format(i.attribute("BU_NAAM").upper())
+                info += "----------------------------------------\n"
 
             info += "Area: {}ha\n".format(i.attribute("OPP_TOT"))
             info += "Population count: {}\n".format(i.attribute("AANT_INW"))
@@ -198,10 +204,8 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
     def getCurrentLayer(self):
         if self.comboBoxType.currentText() == "PM 2.5":
-            #self.sliderMaxLevel.setEnabled(True)
             return self.getLayer("pm25_concentration")
         elif self.comboBoxType.currentText() == "PM 10":
-            #self.sliderMaxLevel.setEnabled(True)
             return self.getLayer("pm10_concentration")
         elif self.comboBoxType.currentText() == "NO2":
             return self.getLayer("no2_concentration")
@@ -225,27 +229,28 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
         if enabled:
             self.updateMap()
 
-
     def updateMinMidMax(self):
         if self.comboBoxType.currentText() == "PM 2.5":
             self.sliderMaxLevel.setRange(12, 25)
             self.sliderMaxLevel.setTickInterval(1)
+            self.sliderMaxLevel.setSliderPosition(15)
         elif self.comboBoxType.currentText() == "PM 10":
             self.sliderMaxLevel.setRange(20, 40)
             self.sliderMaxLevel.setTickInterval(1)
+            self.sliderMaxLevel.setSliderPosition(30)
         elif self.comboBoxType.currentText() == "NO2":
             self.sliderMaxLevel.setRange(30, 40)
             self.sliderMaxLevel.setTickInterval(1)
+            self.sliderMaxLevel.setSliderPosition(35)
         elif self.comboBoxType.currentText() == "None":
-            self.sliderMaxLevel.setRange(0, 1)
-            self.sliderMaxLevel.setTickInterval(1)
+            pass
         else:
             raise KeyError("unexpected pollution type:" )
 
         minimum = self.sliderMaxLevel.minimum()
         maximum = self.sliderMaxLevel.maximum()
         self.labelMin.setText(str(minimum))
-        self.labelMid.setText(str((minimum + maximum) / 2))
+        self.labelMid.setText(str((minimum + maximum) / 2.0))
         self.labelMax.setText(str(maximum))
 
     def initComboBox(self):
@@ -279,9 +284,11 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.radioGrp.addButton(self.radioButtonGmapsBgOn) #online map
         self.radioGrp.addButton(self.radioButtonGmapsBgOff) #offline map
         #actions
-        self.radioButtonSatBgOn.setChecked(legend.isLayerVisible(self.getLayer("Google Satellite")))
+        if self.layerExists("Google Satellite"):
+            self.radioButtonSatBgOn.setChecked(legend.isLayerVisible(self.getLayer("Google Satellite")))
         self.radioButtonSatBgOff.setChecked(legend.isLayerVisible(self.getLayer("SatelliteBackground")))
-        self.radioButtonGmapsBgOn.setChecked(legend.isLayerVisible(self.getLayer("Google Streets")))
+        if self.layerExists("Google Streets"):
+            self.radioButtonGmapsBgOn.setChecked(legend.isLayerVisible(self.getLayer("Google Streets")))
         self.radioButtonGmapsBgOff.setChecked(legend.isLayerVisible(self.getLayer("GmapBackground")))
         #connect buttons
         self.radioButtonSatBgOn.toggled.connect(self.showSatBgOnline)
@@ -289,18 +296,22 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.radioButtonGmapsBgOn.toggled.connect(self.showGmapsBgOnline)
         self.radioButtonGmapsBgOff.toggled.connect(self.showGmapsBgOff)
         #https: // stackoverflow.com / questions / 1753939 / qt - python - radiobutton - activate - event
+
     def showSatBgOnline(self, checked):
         layer = self.getLayer("Google Satellite")
         legend = self.iface.legendInterface()
         legend.setLayerVisible(layer, checked)
+
     def showSatBgOff(self, checked):
         layer = self.getLayer("SatelliteBackground")
         legend = self.iface.legendInterface()
         legend.setLayerVisible(layer, checked)
+
     def showGmapsBgOnline(self, checked):
         layer = self.getLayer("Google Streets")
         legend = self.iface.legendInterface()
         legend.setLayerVisible(layer, checked)
+
     def showGmapsBgOff(self, checked):
         layer = self.getLayer("GmapBackground")
         legend = self.iface.legendInterface()
@@ -350,7 +361,7 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
         for layer in legend.layers():
             if layer.name() == name:
                 return layer
-        # raise KeyError("layer does not exist")
+        raise KeyError("layer does not exist")
 
     def layerExists(self, name):
         legend = self.iface.legendInterface()

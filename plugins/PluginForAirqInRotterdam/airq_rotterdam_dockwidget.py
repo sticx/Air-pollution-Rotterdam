@@ -25,7 +25,7 @@ import os
 
 import os.path
 from PyQt4 import QtGui, uic
-from PyQt4.QtGui import QColor, QAction, QFileDialog
+from PyQt4.QtGui import QColor, QAction, QFileDialog, QMessageBox
 from PyQt4.QtCore import pyqtSignal
 from qgis.core import QgsColorRampShader, QgsRasterShader, QgsSingleBandPseudoColorRenderer
 
@@ -48,6 +48,15 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.setupUi(self)
         self.iface=iface
         self.plugin_dir = os.path.dirname(__file__)
+
+        if not(self.layerExists("Google Satellite")) or not(self.layerExists("Google Streets")):
+            QMessageBox.warning(self, "OpenLayers Plugin not installed",
+                                "The OpenLayers Plugin might not be installed correctly. "
+                                "Background layers might not be displayed correctly.",
+                                QMessageBox.Ok)
+            self.radioButtonSatBgOn.setEnabled(False)
+            self.radioButtonGmapsBgOn.setEnabled(False)
+
         self.openScenario()
         self.initCheckBoxes()
         self.initComboBox()
@@ -203,11 +212,18 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
     def updateCurrentValue(self):
         self.labelCurrentValue.setText("Value: " + str(self.sliderMaxLevel.sliderPosition()) + " ug/m3")
-        if self.comboBoxType.currentText() != "None":
-            self.sliderMaxLevel.setEnabled(True)
+
+        enabled = self.comboBoxType.currentText() != "None"
+        self.sliderMaxLevel.setEnabled(enabled)
+        self.labelCurrentValue.setEnabled(enabled)
+        self.labelMin.setEnabled(enabled)
+        self.labelMid.setEnabled(enabled)
+        self.labelMax.setEnabled(enabled)
+        self.labelGoodQuality.setEnabled(enabled)
+        self.labelLegalLimit.setEnabled(enabled)
+
+        if enabled:
             self.updateMap()
-        else:
-            self.sliderMaxLevel.setEnabled(False)
 
 
     def updateMinMidMax(self):
@@ -335,6 +351,13 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
             if layer.name() == name:
                 return layer
         # raise KeyError("layer does not exist")
+
+    def layerExists(self, name):
+        legend = self.iface.legendInterface()
+        for layer in legend.layers():
+            if layer.name() == name:
+                return True
+        return False
 
     def closeEvent(self, event):
         self.closingPlugin.emit()

@@ -224,7 +224,7 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
         legend = self.iface.legendInterface()
         legend.setLayerVisible(layer, self.comboBoxType.currentText() == "NO2")
 
-    def initRadioButtons(self):
+    # def initRadioButtons(self):
         # legend = self.iface.legendInterface()
         # # Set Default
         # self.radioButtonSatBgOn.setChecked(True)
@@ -247,7 +247,7 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
         #
         # self.b2 = QRadioButton("Button2")
         # self.b2.toggled.connect(lambda: self.btnstate(self.b2))
-       # https: // stackoverflow.com / questions / 1753939 / qt - python - radiobutton - activate - event
+        # https: // stackoverflow.com / questions / 1753939 / qt - python - radiobutton - activate - event
     def initCheckBoxes(self):
         legend = self.iface.legendInterface()
         self.checkBoxHospitals.setChecked(legend.isLayerVisible(self.getLayer("Hospitals")))

@@ -77,8 +77,19 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
             if self.textNotes.toPlainText() != "":
                 fh.write("               USER NOTES\n"
-                         "========================================\n" +
-                         self.textNotes.toPlainText() + "\n"
+                         "========================================\n"
+                         "HOSPITALS\n" +
+                         self.textNotesHospitals.toPlainText() + "\n"
+                         "\n")
+
+            if self.textNotes.toPlainText() != "":
+                fh.write("SCHOOLS\n" +
+                         self.textNotesSchools.toPlainText() + "\n"
+                         "\n")
+
+            if self.textNotes.toPlainText() != "":
+                fh.write("NURSING HOMES\n" +
+                         self.textNotesNursingHomes.toPlainText() + "\n"
                          "\n\n")
 
             if self.generateInfo(False) != "":

@@ -92,6 +92,7 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.fullZoomButton.clicked.connect(self.iface.actionZoomFullExtent().trigger)
 
     def initSelectButton(self):
+        self.changeTool(False)
         self.selectButton.toggled.connect(self.changeTool)
         self.getLayer("Rotterdam_neighbourhoods_cleaned").selectionChanged.connect(self.updateInfo)
 

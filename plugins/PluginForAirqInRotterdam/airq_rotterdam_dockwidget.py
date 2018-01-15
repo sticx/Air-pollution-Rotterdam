@@ -51,11 +51,12 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.openScenario()
         self.initCheckBoxes()
         self.initComboBox()
-        self.initslider()
         self.initSelectButton()
         self.initZoomButtons()
         self.initExportButton()
         self.initRadioButtons()
+        self.initslider()
+
 
     def initExportButton(self):
         self.buttonExport.clicked.connect(self.export)
@@ -187,17 +188,26 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
     def getCurrentLayer(self):
         if self.comboBoxType.currentText() == "PM 2.5":
+            #self.sliderMaxLevel.setEnabled(True)
             return self.getLayer("pm25_concentration")
         elif self.comboBoxType.currentText() == "PM 10":
+            #self.sliderMaxLevel.setEnabled(True)
             return self.getLayer("pm10_concentration")
         elif self.comboBoxType.currentText() == "NO2":
             return self.getLayer("no2_concentration")
+        elif self.comboBoxType.currentText() == "None":
+            return
         else:
             raise KeyError("unexpected pollution type")
 
     def updateCurrentValue(self):
         self.labelCurrentValue.setText("Value: " + str(self.sliderMaxLevel.sliderPosition()) + " ug/m3")
-        self.updateMap()
+        if self.comboBoxType.currentText() != "None":
+            self.sliderMaxLevel.setEnabled(True)
+            self.updateMap()
+        else:
+            self.sliderMaxLevel.setEnabled(False)
+
 
     def updateMinMidMax(self):
         if self.comboBoxType.currentText() == "PM 2.5":
@@ -209,6 +219,9 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
         elif self.comboBoxType.currentText() == "NO2":
             self.sliderMaxLevel.setRange(30, 40)
             self.sliderMaxLevel.setTickInterval(1)
+        elif self.comboBoxType.currentText() == "None":
+            self.sliderMaxLevel.setRange(0, 1)
+            self.sliderMaxLevel.setTickInterval(1)
         else:
             raise KeyError("unexpected pollution type:" )
 
@@ -219,7 +232,7 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.labelMax.setText(str(maximum))
 
     def initComboBox(self):
-        typeList = ["PM 2.5", "PM 10", "NO2"]
+        typeList = ["PM 2.5", "PM 10", "NO2", "None"]
         self.comboBoxType.insertItems(0, typeList)
         self.updateComboBox()
         self.comboBoxType.currentIndexChanged.connect(self.updateComboBox)

@@ -92,7 +92,7 @@
         <item row="3" column="3" colspan="3">
          <widget class="QLabel" name="labelCurrentValue">
           <property name="text">
-           <string>Value</string>
+           <string>Value (Yearly average):</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -108,7 +108,7 @@
            </font>
           </property>
           <property name="text">
-           <string>Select critical points</string>
+           <string>Select critical points of interest</string>
           </property>
          </widget>
         </item>
@@ -121,7 +121,7 @@
            </font>
           </property>
           <property name="text">
-           <string>Select pollution type</string>
+           <string>Select air pollution type</string>
           </property>
          </widget>
         </item>
@@ -152,13 +152,13 @@
         <item row="21" column="0" colspan="6">
          <widget class="QRadioButton" name="radioButtonSatBgOn">
           <property name="toolTip">
-           <string>OpenLayerPlugin is required for this function</string>
+           <string>The Open Layers Plugin and an internet connection is required to use this background</string>
           </property>
           <property name="text">
-           <string>Satellite background (online)</string>
+           <string>Satellite background (Open Layers Plugin)</string>
           </property>
           <property name="checked">
-           <bool>true</bool>
+           <bool>false</bool>
           </property>
           <attribute name="buttonGroup">
            <string notr="true">radioGrp</string>
@@ -167,8 +167,11 @@
         </item>
         <item row="23" column="0" colspan="6">
          <widget class="QRadioButton" name="radioButtonGmapsBgOn">
+          <property name="toolTip">
+           <string>The Open Layers Plugin and an internet connection is required to use this background</string>
+          </property>
           <property name="text">
-           <string>Google Maps background (online)</string>
+           <string>Google Maps background (Open Layers Plugin)</string>
           </property>
           <attribute name="buttonGroup">
            <string notr="true">radioGrp</string>
@@ -194,7 +197,10 @@
            <bool>true</bool>
           </property>
           <property name="text">
-           <string>Satellite background (offline)</string>
+           <string>Satellite background (Available offline)</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
           </property>
           <attribute name="buttonGroup">
            <string notr="true">radioGrp</string>
@@ -204,7 +210,7 @@
         <item row="24" column="0" colspan="6">
          <widget class="QRadioButton" name="radioButtonGmapsBgOff">
           <property name="text">
-           <string>Google Maps background (offline)</string>
+           <string>Google Maps background (Available offline)</string>
           </property>
           <attribute name="buttonGroup">
            <string notr="true">radioGrp</string>
@@ -250,14 +256,14 @@
            </font>
           </property>
           <property name="text">
-           <string>Pollution sources</string>
+           <string>Select air pollution sources</string>
           </property>
          </widget>
         </item>
         <item row="18" column="0" colspan="6">
          <widget class="QCheckBox" name="checkBoxIndustry">
           <property name="text">
-           <string>Industry</string>
+           <string>Heavy industry</string>
           </property>
          </widget>
         </item>
@@ -339,11 +345,14 @@
       </widget>
       <widget class="QWidget" name="tab_2">
        <attribute name="title">
-        <string>Information and Notes</string>
+        <string>Information and Reporting</string>
        </attribute>
        <layout class="QGridLayout" name="gridLayout_3">
         <item row="0" column="0" colspan="2">
          <widget class="QLabel" name="label_9">
+          <property name="toolTip">
+           <string/>
+          </property>
           <property name="text">
            <string>Hospital Notes</string>
           </property>
@@ -362,6 +371,9 @@
             <width>16777215</width>
             <height>58</height>
            </size>
+          </property>
+          <property name="toolTip">
+           <string>Use this text box to add your notes regarding Hospitals to your report</string>
           </property>
           <property name="readOnly">
            <bool>false</bool>
@@ -392,6 +404,9 @@
             <height>58</height>
            </size>
           </property>
+          <property name="toolTip">
+           <string>Use this text box to add your notes regarding schools to your report</string>
+          </property>
           <property name="readOnly">
            <bool>false</bool>
           </property>
@@ -421,6 +436,9 @@
             <height>58</height>
            </size>
           </property>
+          <property name="toolTip">
+           <string>Use this text box to add your notes regarding nursing homes to your report</string>
+          </property>
           <property name="readOnly">
            <bool>false</bool>
           </property>
@@ -431,8 +449,11 @@
         </item>
         <item row="6" column="0" colspan="2">
          <widget class="QPushButton" name="selectButton">
+          <property name="toolTip">
+           <string>Select the neighbourhood of choice to view specific information regarding that neighbourhood</string>
+          </property>
           <property name="text">
-           <string>Select neighbourhoods</string>
+           <string>Select neighbourhood</string>
           </property>
           <property name="checkable">
            <bool>true</bool>
@@ -447,19 +468,23 @@
          </widget>
         </item>
         <item row="8" column="0" colspan="2">
-         <widget class="QTextBrowser" name="neighbourhoodInfo"/>
+         <widget class="QTextBrowser" name="neighbourhoodInfo">
+          <property name="toolTip">
+           <string>Detailed information of the selected neighbourhood will be shown from your neighbourhood of choice</string>
+          </property>
+         </widget>
         </item>
         <item row="9" column="0">
          <widget class="QPushButton" name="zoomSelectionButton">
           <property name="text">
-           <string>Zoom selection</string>
+           <string>Zoom to selection</string>
           </property>
          </widget>
         </item>
         <item row="9" column="1">
          <widget class="QPushButton" name="fullZoomButton">
           <property name="text">
-           <string>Zoom full</string>
+           <string>Zoom out</string>
           </property>
          </widget>
         </item>

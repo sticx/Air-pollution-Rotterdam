@@ -309,7 +309,7 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
         for layer in legend.layers():
             if layer.name() == name:
                 return layer
-        raise KeyError("layer does not exist")
+        # raise KeyError("layer does not exist")
 
     def closeEvent(self, event):
         self.closingPlugin.emit()

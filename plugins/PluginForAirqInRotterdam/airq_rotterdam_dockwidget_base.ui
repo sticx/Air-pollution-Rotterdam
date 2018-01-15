@@ -1,165 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>PluginForAirqInRotterdamDockWidgetBase</class>
- <widget class="QDockWidget" name="PluginForAirqInRotterdamDockWidgetBase">
+ <class>DockWidget</class>
+ <widget class="QDockWidget" name="DockWidget">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>304</width>
-    <height>870</height>
+    <width>285</width>
+    <height>607</height>
    </rect>
   </property>
-  <property name="minimumSize">
-   <size>
-    <width>303</width>
-    <height>792</height>
-   </size>
-  </property>
   <property name="windowTitle">
-   <string>Plugin For Air Quality In Rotterdam</string>
+   <string>DockWidget</string>
   </property>
   <widget class="QWidget" name="dockWidgetContents">
-   <layout class="QGridLayout" name="gridLayout">
-    <item row="22" column="3" colspan="2">
-     <widget class="QLabel" name="label_8">
-      <property name="font">
-       <font>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>Map options</string>
-      </property>
-     </widget>
-    </item>
-    <item row="23" column="3">
-     <widget class="QRadioButton" name="radioButtonSatBgOn">
-      <property name="text">
-       <string>Satellite background (internet)</string>
-      </property>
-      <property name="checked">
-       <bool>true</bool>
-      </property>
-      <attribute name="buttonGroup">
-       <string notr="true">radioGrp</string>
-      </attribute>
-     </widget>
-    </item>
-    <item row="25" column="3">
-     <widget class="QRadioButton" name="radioButtonGmapsBgOn">
-      <property name="text">
-       <string>Google Maps background (internet)</string>
-      </property>
-      <attribute name="buttonGroup">
-       <string notr="true">radioGrp</string>
-      </attribute>
-     </widget>
-    </item>
-    <item row="24" column="3">
-     <widget class="QRadioButton" name="radioButtonSatBgOff">
-      <property name="enabled">
-       <bool>true</bool>
-      </property>
-      <property name="text">
-       <string>Satellite background (offline)</string>
-      </property>
-      <attribute name="buttonGroup">
-       <string notr="true">radioGrp</string>
-      </attribute>
-     </widget>
-    </item>
-    <item row="33" column="6" colspan="3">
-     <widget class="QPushButton" name="buttonExport">
-      <property name="text">
-       <string>Export</string>
-      </property>
-     </widget>
-    </item>
-    <item row="19" column="3" colspan="6">
-     <widget class="QLabel" name="label_4">
-      <property name="font">
-       <font>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>Pollution sources</string>
-      </property>
-     </widget>
-    </item>
-    <item row="5" column="7" colspan="2">
-     <widget class="QLabel" name="labelMax">
-      <property name="text">
-       <string>max</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-      </property>
-     </widget>
-    </item>
-    <item row="20" column="3" colspan="6">
-     <widget class="QCheckBox" name="checkBoxRoads">
-      <property name="enabled">
-       <bool>true</bool>
-      </property>
-      <property name="text">
-       <string>Primary roads</string>
-      </property>
-     </widget>
-    </item>
-    <item row="5" column="5" colspan="2">
-     <widget class="QLabel" name="labelMid">
-      <property name="text">
-       <string>mid</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-    </item>
-    <item row="30" column="3" colspan="6">
-     <widget class="QLabel" name="label_7">
-      <property name="text">
-       <string>Neighbourhood information</string>
-      </property>
-     </widget>
-    </item>
-    <item row="21" column="3" colspan="6">
-     <widget class="QCheckBox" name="checkBoxIndustry">
-      <property name="text">
-       <string>Industry</string>
-      </property>
-     </widget>
-    </item>
-    <item row="10" column="3" colspan="3">
-     <widget class="QLabel" name="labelCurrentValue">
-      <property name="text">
-       <string>Value</string>
-      </property>
-     </widget>
-    </item>
-    <item row="8" column="6" colspan="3">
-     <widget class="QLabel" name="label_6">
-      <property name="text">
-       <string>Legal limit</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-      </property>
-     </widget>
-    </item>
-    <item row="32" column="6" colspan="3">
-     <widget class="QPushButton" name="fullZoomButton">
-      <property name="text">
-       <string>Zoom full</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="3" colspan="6">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>280</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>400</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>280</width>
+      <height>560</height>
+     </size>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="tab_1">
+     <attribute name="title">
+      <string>Project Settings</string>
+     </attribute>
      <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>2</y>
+        <width>271</width>
+        <height>16</height>
+       </rect>
+      </property>
       <property name="font">
        <font>
         <weight>75</weight>
@@ -170,56 +64,40 @@
        <string>Select pollution type</string>
       </property>
      </widget>
-    </item>
-    <item row="29" column="3" colspan="6">
-     <widget class="QPushButton" name="selectButton">
-      <property name="text">
-       <string>Select neighbourhoods</string>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>148</y>
+        <width>38</width>
+        <height>11</height>
+       </rect>
       </property>
-      <property name="checkable">
-       <bool>true</bool>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="bottomMargin">
+        <number>10</number>
+       </property>
+      </layout>
+     </widget>
+     <widget class="QComboBox" name="comboBoxType">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>21</y>
+        <width>256</width>
+        <height>20</height>
+       </rect>
       </property>
      </widget>
-    </item>
-    <item row="18" column="3">
-     <layout class="QVBoxLayout" name="verticalLayout_3">
-      <property name="bottomMargin">
-       <number>10</number>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>62</y>
+        <width>256</width>
+        <height>13</height>
+       </rect>
       </property>
-     </layout>
-    </item>
-    <item row="13" column="3" colspan="3">
-     <widget class="QCheckBox" name="checkBoxHospitals">
-      <property name="text">
-       <string>Hospitals</string>
-      </property>
-     </widget>
-    </item>
-    <item row="31" column="3" colspan="6">
-     <widget class="QTextBrowser" name="neighbourhoodInfo"/>
-    </item>
-    <item row="15" column="3" colspan="6">
-     <widget class="QCheckBox" name="checkBoxSchools">
-      <property name="text">
-       <string>Schools</string>
-      </property>
-      <property name="checkable">
-       <bool>true</bool>
-      </property>
-      <property name="checked">
-       <bool>false</bool>
-      </property>
-     </widget>
-    </item>
-    <item row="32" column="3" colspan="3">
-     <widget class="QPushButton" name="zoomSelectionButton">
-      <property name="text">
-       <string>Zoom selection</string>
-      </property>
-     </widget>
-    </item>
-    <item row="12" column="3" colspan="6">
-     <widget class="QLabel" name="label">
       <property name="font">
        <font>
         <weight>75</weight>
@@ -227,12 +105,31 @@
        </font>
       </property>
       <property name="text">
-       <string>Select critical points</string>
+       <string>Set maximal level</string>
       </property>
      </widget>
-    </item>
-    <item row="4" column="3" colspan="6">
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>127</y>
+        <width>125</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Good quality</string>
+      </property>
+     </widget>
      <widget class="QSlider" name="sliderMaxLevel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>83</y>
+        <width>256</width>
+        <height>27</height>
+       </rect>
+      </property>
       <property name="pageStep">
        <number>1</number>
       </property>
@@ -246,36 +143,450 @@
        <number>10</number>
       </property>
      </widget>
-    </item>
-    <item row="11" column="3">
-     <layout class="QVBoxLayout" name="verticalLayout_2">
-      <property name="bottomMargin">
-       <number>10</number>
-      </property>
-     </layout>
-    </item>
-    <item row="5" column="3" colspan="2">
      <widget class="QLabel" name="labelMin">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>116</y>
+        <width>81</width>
+        <height>13</height>
+       </rect>
+      </property>
       <property name="text">
        <string>min</string>
       </property>
      </widget>
-    </item>
-    <item row="27" column="3">
-     <spacer name="verticalSpacer_2">
-      <property name="orientation">
-       <enum>Qt::Vertical</enum>
+     <widget class="QLabel" name="labelMid">
+      <property name="geometry">
+       <rect>
+        <x>97</x>
+        <y>116</y>
+        <width>82</width>
+        <height>13</height>
+       </rect>
       </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>20</width>
-        <height>40</height>
-       </size>
+      <property name="text">
+       <string>mid</string>
       </property>
-     </spacer>
-    </item>
-    <item row="17" column="3" colspan="6">
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>47</y>
+        <width>38</width>
+        <height>11</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <property name="bottomMargin">
+        <number>10</number>
+       </property>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="labelCurrentValue">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>62</y>
+        <width>125</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Value</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelMax">
+      <property name="geometry">
+       <rect>
+        <x>185</x>
+        <y>116</y>
+        <width>81</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>max</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>141</x>
+        <y>127</y>
+        <width>125</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Legal limit</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>247</y>
+        <width>46</width>
+        <height>11</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <property name="bottomMargin">
+        <number>10</number>
+       </property>
+      </layout>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxHospitals">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>179</y>
+        <width>151</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Hospitals</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxNursingHomes">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>220</y>
+        <width>256</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nursing homes</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>256</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Select critical points</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxSchools">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>200</y>
+        <width>256</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Schools</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>350</y>
+        <width>99</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Map options</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxIndustry">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>304</y>
+        <width>256</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Industry</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>262</y>
+        <width>256</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Pollution sources</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxRoads">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>281</y>
+        <width>256</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Primary roads</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButtonGmapsBgOff">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>440</y>
+        <width>256</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Google Maps background (offline)</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">radioGrp</string>
+      </attribute>
+     </widget>
+     <widget class="QRadioButton" name="radioButtonGmapsBgOn">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>417</y>
+        <width>256</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Google Maps background (internet)</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">radioGrp</string>
+      </attribute>
+     </widget>
+     <widget class="QRadioButton" name="radioButtonSatBgOn">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>371</y>
+        <width>256</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>OpenLayerPlugin is required for this function</string>
+      </property>
+      <property name="text">
+       <string>Satellite background (internet)</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">radioGrp</string>
+      </attribute>
+     </widget>
+     <widget class="QRadioButton" name="radioButtonSatBgOff">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>394</y>
+        <width>256</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Satellite background (offline)</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">radioGrp</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="layoutWidget_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>331</y>
+        <width>46</width>
+        <height>11</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <property name="bottomMargin">
+        <number>10</number>
+       </property>
+      </layout>
+     </widget>
+     <zorder>layoutWidget</zorder>
+     <zorder>comboBoxType</zorder>
+     <zorder>label_3</zorder>
+     <zorder>label_5</zorder>
+     <zorder>sliderMaxLevel</zorder>
+     <zorder>labelMin</zorder>
+     <zorder>labelMid</zorder>
+     <zorder>layoutWidget_2</zorder>
+     <zorder>labelCurrentValue</zorder>
+     <zorder>labelMax</zorder>
+     <zorder>label_6</zorder>
+     <zorder>layoutWidget_3</zorder>
+     <zorder>label_2</zorder>
+     <zorder>checkBoxHospitals</zorder>
+     <zorder>checkBoxNursingHomes</zorder>
+     <zorder>label</zorder>
+     <zorder>checkBoxSchools</zorder>
+     <zorder>label_8</zorder>
+     <zorder>checkBoxIndustry</zorder>
+     <zorder>label_4</zorder>
+     <zorder>checkBoxRoads</zorder>
+     <zorder>radioButtonGmapsBgOff</zorder>
+     <zorder>radioButtonGmapsBgOn</zorder>
+     <zorder>radioButtonSatBgOn</zorder>
+     <zorder>radioButtonSatBgOff</zorder>
+     <zorder>layoutWidget_4</zorder>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Information and Notes</string>
+     </attribute>
+     <widget class="QPushButton" name="buttonExport">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>480</y>
+        <width>125</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Export</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="selectButton">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>250</y>
+        <width>256</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Select neighbourhoods</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>280</y>
+        <width>256</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Neighbourhood information:</string>
+      </property>
+     </widget>
+     <widget class="QTextBrowser" name="neighbourhoodInfo">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>300</y>
+        <width>256</width>
+        <height>141</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="fullZoomButton">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>450</y>
+        <width>125</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Zoom full</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="zoomSelectionButton">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>450</y>
+        <width>125</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Zoom selection</string>
+      </property>
+     </widget>
      <widget class="QTextBrowser" name="textNotes">
+      <property name="geometry">
+       <rect>
+        <x>11</x>
+        <y>26</y>
+        <width>256</width>
+        <height>58</height>
+       </rect>
+      </property>
       <property name="minimumSize">
        <size>
         <width>0</width>
@@ -295,62 +606,103 @@
        <bool>false</bool>
       </property>
      </widget>
-    </item>
-    <item row="2" column="3">
-     <layout class="QVBoxLayout" name="verticalLayout_4">
-      <property name="bottomMargin">
-       <number>10</number>
-      </property>
-     </layout>
-    </item>
-    <item row="1" column="3" colspan="6">
-     <widget class="QComboBox" name="comboBoxType"/>
-    </item>
-    <item row="9" column="3">
-     <layout class="QVBoxLayout" name="verticalLayout">
-      <property name="bottomMargin">
-       <number>10</number>
-      </property>
-     </layout>
-    </item>
-    <item row="8" column="3" colspan="3">
-     <widget class="QLabel" name="label_5">
-      <property name="text">
-       <string>Good quality</string>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="3" colspan="6">
-     <widget class="QLabel" name="label_3">
-      <property name="font">
-       <font>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>11</x>
+        <y>6</y>
+        <width>241</width>
+        <height>16</height>
+       </rect>
       </property>
       <property name="text">
-       <string>Set maximal level</string>
+       <string>Hospital Notes</string>
       </property>
      </widget>
-    </item>
-    <item row="16" column="3" colspan="6">
-     <widget class="QCheckBox" name="checkBoxNursingHomes">
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>11</x>
+        <y>86</y>
+        <width>241</width>
+        <height>16</height>
+       </rect>
+      </property>
       <property name="text">
-       <string>Nursing homes</string>
+       <string>School Notes</string>
       </property>
      </widget>
-    </item>
-    <item row="26" column="3">
-     <widget class="QRadioButton" name="radioButtonGmapsBgOff">
+     <widget class="QTextBrowser" name="textNotes_3">
+      <property name="geometry">
+       <rect>
+        <x>11</x>
+        <y>106</y>
+        <width>256</width>
+        <height>58</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>58</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>58</height>
+       </size>
+      </property>
+      <property name="readOnly">
+       <bool>false</bool>
+      </property>
+      <property name="acceptRichText">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QTextBrowser" name="textNotes_4">
+      <property name="geometry">
+       <rect>
+        <x>11</x>
+        <y>186</y>
+        <width>256</width>
+        <height>58</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>58</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>58</height>
+       </size>
+      </property>
+      <property name="readOnly">
+       <bool>false</bool>
+      </property>
+      <property name="acceptRichText">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>11</x>
+        <y>166</y>
+        <width>241</width>
+        <height>16</height>
+       </rect>
+      </property>
       <property name="text">
-       <string>Google Maps background (offline)</string>
+       <string>Nursing Homes Notes</string>
       </property>
-      <attribute name="buttonGroup">
-       <string notr="true">radioGrp</string>
-      </attribute>
      </widget>
-    </item>
-   </layout>
+    </widget>
+   </widget>
   </widget>
  </widget>
  <resources/>

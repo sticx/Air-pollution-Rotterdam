@@ -55,6 +55,7 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
         self.initSelectButton()
         self.initZoomButtons()
         self.initExportButton()
+        self.initRadioButtons()
 
     def initExportButton(self):
         self.buttonExport.clicked.connect(self.export)
@@ -225,6 +226,44 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
         legend = self.iface.legendInterface()
         legend.setLayerVisible(layer, self.comboBoxType.currentText() == "NO2")
 
+    def initRadioButtons(self):
+        legend = self.iface.legendInterface()
+        # Set Default
+        self.radioButtonSatBgOn.setChecked(True)
+        # Create a Group and make it exclusive
+        self.radioGrp.setExclusive(True)
+        # Add radio buttons to group
+        self.radioGrp.addButton(self.radioButtonSatBgOn)
+        self.radioGrp.addButton(self.radioButtonSatBgOff)
+        self.radioGrp.addButton(self.radioButtonGmapsBgOn)
+        self.radioGrp.addButton(self.radioButtonGmapsBgOff)
+        #actions
+        self.radioButtonSatBgOn.setChecked(legend.isLayerVisible(self.getLayer("Google Satellite")))
+        self.radioButtonSatBgOff.setChecked(legend.isLayerVisible(self.getLayer("SatelliteBackground")))
+        self.radioButtonGmapsBgOn.setChecked(legend.isLayerVisible(self.getLayer("Google Streets")))
+        self.radioButtonGmapsBgOff.setChecked(legend.isLayerVisible(self.getLayer("GmapBackground")))
+        #connect buttons
+        self.radioButtonSatBgOn.toggled.connect(self.showSatBgOnline)
+        self.radioButtonSatBgOff.toggled.connect(self.showSatBgOff)
+        self.radioButtonGmapsBgOn.toggled.connect(self.showGmapsBgOnline)
+        self.radioButtonGmapsBgOff.toggled.connect(self.showGmapsBgOff)
+        #https: // stackoverflow.com / questions / 1753939 / qt - python - radiobutton - activate - event
+    def showSatBgOnline(self, checked):
+        layer = self.getLayer("Google Satellite")
+        legend = self.iface.legendInterface()
+        legend.setLayerVisible(layer, checked)
+    def showSatBgOff(self, checked):
+        layer = self.getLayer("SatelliteBackground")
+        legend = self.iface.legendInterface()
+        legend.setLayerVisible(layer, checked)
+    def showGmapsBgOnline(self, checked):
+        layer = self.getLayer("Google Streets")
+        legend = self.iface.legendInterface()
+        legend.setLayerVisible(layer, checked)
+    def showGmapsBgOff(self, checked):
+        layer = self.getLayer("GmapBackground")
+        legend = self.iface.legendInterface()
+        legend.setLayerVisible(layer, checked)
 
     def initCheckBoxes(self):
         legend = self.iface.legendInterface()

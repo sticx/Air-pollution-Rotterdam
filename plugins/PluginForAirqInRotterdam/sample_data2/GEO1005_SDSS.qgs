@@ -17,7 +17,7 @@
     <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="Nursing_homes20171215113342241" source="Nursing_homes.shp" name="Nursing_homes">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Roads20180114151649676" source="C:\Users\HP EliteBook 8560p\Documents\github\Air-pollution-Rotterdam\plugins\PluginForAirqInRotterdam\sample_data2\Roads.shp" name="Roads">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Roads20180114151649676" source="Roads.shp" name="Roads">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Rotterdam_neighbourhoods_cleaned20171214200731961" source="Rotterdam_neighbourhoods_cleaned.shp" name="Rotterdam_neighbourhoods_cleaned">
@@ -35,13 +35,25 @@
     <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="POIs_Rotterdam20171215112818405" source="POIs_Rotterdam.shp" name="POIs_Rotterdam">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="delimitedtext" checked="Qt::Unchecked" id="result_rotterdam_g599_mt2017_j2016_rpgw20171214180139071" source="file:///C:/Users/HP%20EliteBook%208560p/.qgis2/python/plugins/PluginForAirqInRotterdam/sample_data2/result_rotterdam_g599_mt2017_j2016_rpgw.csv?type=csv&amp;delimiter=;&amp;wktField=geomet_wkt&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no" name="result_rotterdam_g599_mt2017_j2016_rpgw">
+    <layer-tree-layer expanded="1" providerKey="delimitedtext" checked="Qt::Unchecked" id="result_rotterdam_g599_mt2017_j2016_rpgw20171214180139071" source="result_rotterdam_g599_mt2017_j2016_rpgw.csv?type=csv&amp;delimiter=;&amp;wktField=geomet_wkt&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no" name="result_rotterdam_g599_mt2017_j2016_rpgw">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="Rotterdam_neighbourhoods20171203150537122" source="Rotterdam_neighbourhoods.shp" name="Rotterdam_neighbourhoods">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="onderlegger20171215110350096" source="onderlegger.shp" name="onderlegger">
+    <layer-tree-layer expanded="1" providerKey="" checked="Qt::Checked" id="OpenLayers_plugin_layer20180115000521410" source="" name="Google Satellite">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" providerKey="" checked="Qt::Unchecked" id="OpenLayers_plugin_layer20180114231347922" source="" name="Google Streets">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" providerKey="gdal" checked="Qt::Unchecked" id="SatelliteBackground20180115000549665" source="SatelliteBackground.tiff" name="SatelliteBackground">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" providerKey="gdal" checked="Qt::Unchecked" id="GmapBackground20180114231728226" source="GmapBackground.tiff" name="GmapBackground">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="onderlegger20171215110350096" source="onderlegger.shp" name="onderlegger">
       <customproperties/>
     </layer-tree-layer>
   </layer-tree-group>
@@ -49,72 +61,51 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>56195.3731008564500371</xmin>
-      <ymin>426559.75752661615842953</ymin>
-      <xmax>102530.36782741897332016</xmax>
-      <ymax>445508.29291785141685978</ymax>
+      <xmin>447304.91845233819913119</xmin>
+      <ymin>6742877.97473225370049477</ymin>
+      <xmax>514689.3144032311392948</xmax>
+      <ymax>6818180.3689715601503849</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
     <destinationsrs>
       <spatialrefsys>
-        <proj4>+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.2369,50.0087,465.658,-0.406857,0.350733,-1.87035,4.0812 +units=m +no_defs</proj4>
-        <srsid>2517</srsid>
-        <srid>28992</srid>
-        <authid>EPSG:28992</authid>
-        <description>Amersfoort / RD New</description>
-        <projectionacronym>sterea</projectionacronym>
-        <ellipsoidacronym>bessel</ellipsoidacronym>
+        <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+        <srsid>3857</srsid>
+        <srid>3857</srid>
+        <authid>EPSG:3857</authid>
+        <description>WGS 84 / Pseudo Mercator</description>
+        <projectionacronym>merc</projectionacronym>
+        <ellipsoidacronym>WGS84</ellipsoidacronym>
         <geographicflag>false</geographicflag>
       </spatialrefsys>
     </destinationsrs>
     <rendermaptile>0</rendermaptile>
     <layer_coordinate_transform_info>
-      <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="USER:100001" srcDatumTransform="-1" destDatumTransform="-1" layerid="pm10_concentration_tin_clipped20171215104051089"/>
-      <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="Nursing_homes20171203172955777"/>
-      <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="pm10_concentration20171215113808971"/>
-      <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="USER:100001" srcDatumTransform="-1" destDatumTransform="-1" layerid="Rotterdam_neighbourhoods_copy20171214184340465"/>
-      <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="USER:100001" srcDatumTransform="-1" destDatumTransform="-1" layerid="concentration_pm25_tin20171215100128270"/>
-      <layer_coordinate_transform destAuthId="EPSG:28992" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="roads_east20180112201432263"/>
-      <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="USER:100001" srcDatumTransform="-1" destDatumTransform="-1" layerid="no2_concentration_tin20171215102601815"/>
-      <layer_coordinate_transform destAuthId="EPSG:28992" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="industry20180112201222942"/>
-      <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="USER:100001" srcDatumTransform="-1" destDatumTransform="-1" layerid="onderlegger20171215110117727"/>
-      <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="onderlegger20171215110350096"/>
-      <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="Rotterdam_neighbourhoods_cleaned20171214200731961"/>
-      <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="POIs_Rotterdam20171215112818405"/>
-      <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="pm25_concentration20171215113858048"/>
-      <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="memory_20171203172312787"/>
-      <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="no2_concentration20171215113547291"/>
-      <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="USER:100001" srcDatumTransform="-1" destDatumTransform="-1" layerid="Rotterdam_neighbourhoods20171203150537122"/>
-      <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="result_rotterdam_g599_mt2017_j2016_rpgw20171203170817043"/>
-      <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="Schools20171215113059861"/>
-      <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="USER:100001" srcDatumTransform="-1" destDatumTransform="-1" layerid="pm10_concentration_tin_clipped20171215095139216"/>
-      <layer_coordinate_transform destAuthId="EPSG:28992" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="industrie20180112201203111"/>
-      <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="OSM_2016_Rotterdam_POIs_WO20171203170750889"/>
-      <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="result_rotterdam_g599_mt2017_j2016_rpgw20171203170842176"/>
-      <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="Schools20171203171450081"/>
-      <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="memory_20171203172147488"/>
-      <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="Hospitals20171215113423404"/>
-      <layer_coordinate_transform destAuthId="EPSG:28992" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="Roads20180114151649676"/>
-      <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="Hospitals20171203172511061"/>
-      <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="USER:100001" srcDatumTransform="-1" destDatumTransform="-1" layerid="pm25_concentration_tin_clipped20171215100847306"/>
-      <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="Schools_new20171215112153227"/>
-      <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="Nursing_homes_new20171215112731628"/>
-      <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="USER:100001" srcDatumTransform="-1" destDatumTransform="-1" layerid="pm10_concentration_tin20171215103858215"/>
-      <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="USER:100001" srcDatumTransform="-1" destDatumTransform="-1" layerid="no2_concentration_tin_clipped20171215102910549"/>
-      <layer_coordinate_transform destAuthId="EPSG:28992" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="industry20180112201222928"/>
-      <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="Hospitals_new20171215112705451"/>
-      <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="USER:100001" srcDatumTransform="-1" destDatumTransform="-1" layerid="result_rotterdam_g599_mt2017_j2016_rpgw20171214180139071"/>
-      <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="no2_concentration20171215113949880"/>
-      <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="USER:100001" srcDatumTransform="-1" destDatumTransform="-1" layerid="pm10_concentration_tin20171215093841277"/>
-      <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="USER:100001" srcDatumTransform="-1" destDatumTransform="-1" layerid="memory_20171215110148424"/>
-      <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="Nursing_homes20171215113342241"/>
-      <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="USER:100001" srcDatumTransform="-1" destDatumTransform="-1" layerid="onderlegger20171215105959122"/>
-      <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="USER:100001" srcDatumTransform="-1" destDatumTransform="-1" layerid="no2_concentration_tin_clipped20171215101830592"/>
-      <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="Hospitals20171215113210867"/>
-      <layer_coordinate_transform destAuthId="EPSG:28992" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="RoadsEastCleaned20180113125442387"/>
-      <layer_coordinate_transform destAuthId="USER:100001" srcAuthId="USER:100001" srcDatumTransform="-1" destDatumTransform="-1" layerid="no2_concentration_tin20171215101751466"/>
-      <layer_coordinate_transform destAuthId="EPSG:28992" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="industry20180112201222888"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="pm25_concentration20171215113858048"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="pm10_concentration20171215113808971"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenLayers_plugin_layer20180115000521410"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="Nursing_homes20171215113342241"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenLayers_plugin_layer20180114231340585"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="Hospitals20171215113423404"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenLayers_plugin_layer20180114231347922"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="SatelliteBackground20180115000549665"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="onderlegger20171215110350096"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="no2_concentration20171215113949880"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="industry20180112201222928"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenLayers_plugin_layer20180114230636602"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="GmapBackground20180114231728226"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenLayers_plugin_layer20180114231057200"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="Schools20171215113059861"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenLayers_plugin_layer20180114230847281"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenLayers_plugin_layer20180114231127640"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="Rotterdam_neighbourhoods_cleaned20171214200731961"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenLayers_plugin_layer20180114230827659"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="SatelliteBackground20180114230234432"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenLayers_plugin_layer20180114231004205"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenLayers_plugin_layer20180114230253178"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="Roads20180114151649676"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="Wikimedia_unlabelled_layer20180114230933364"/>
     </layer_coordinate_transform_info>
   </mapcanvas>
   <layer-tree-canvas>
@@ -132,6 +123,10 @@
       <item>no2_concentration20171215113949880</item>
       <item>industry20180112201222928</item>
       <item>Roads20180114151649676</item>
+      <item>OpenLayers_plugin_layer20180114231347922</item>
+      <item>GmapBackground20180114231728226</item>
+      <item>OpenLayers_plugin_layer20180115000521410</item>
+      <item>SatelliteBackground20180115000549665</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
@@ -195,13 +190,81 @@
         <legendlayerfile isInOverview="0" layerid="Rotterdam_neighbourhoods20171203150537122" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="onderlegger" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Google Satellite" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="onderlegger20171215110350096" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="OpenLayers_plugin_layer20180115000521410" visible="1"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Google Streets" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="OpenLayers_plugin_layer20180114231347922" visible="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="SatelliteBackground" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="SatelliteBackground20180115000549665" visible="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="GmapBackground" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="GmapBackground20180114231728226" visible="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="onderlegger" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="onderlegger20171215110350096" visible="0"/>
       </filegroup>
     </legendlayer>
   </legend>
   <projectlayers>
+    <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>421200.88721679261652753</xmin>
+        <ymin>6746406.32366085238754749</ymin>
+        <xmax>535500.82224587840028107</xmax>
+        <ymax>6821708.71790016070008278</ymax>
+      </extent>
+      <id>GmapBackground20180114231728226</id>
+      <datasource>./GmapBackground.tiff</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>GmapBackground</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+          <srsid>3857</srsid>
+          <srid>3857</srid>
+          <authid>EPSG:3857</authid>
+          <description>WGS 84 / Pseudo Mercator</description>
+          <projectionacronym>merc</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="identify/format" value="Value"/>
+      </customproperties>
+      <provider>gdal</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+        <noDataList bandNo="2" useSrcNoData="0"/>
+        <noDataList bandNo="3" useSrcNoData="0"/>
+        <noDataList bandNo="4" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="-1" blueBand="3" greenBand="2" type="multibandcolor" redBand="1">
+          <rasterTransparency/>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <extent>
         <xmin>88385.40266178567253519</xmin>
@@ -863,6 +926,64 @@ def my_form_open(dialog, layer, feature):
       </defaults>
       <previewExpression></previewExpression>
     </maplayer>
+    <maplayer minimumScale="0" maximumScale="1e+08" type="plugin" hasScaleBasedVisibilityFlag="0" name="openlayers">
+      <extent>
+        <xmin>-20037508.33999999985098839</xmin>
+        <ymin>-20037508.33999999985098839</ymin>
+        <xmax>20037508.33999999985098839</xmax>
+        <ymax>20037508.33999999985098839</ymax>
+      </extent>
+      <id>OpenLayers_plugin_layer20180114231347922</id>
+      <datasource>.</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Google Streets</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+          <srsid>3857</srsid>
+          <srid>3857</srid>
+          <authid>EPSG:3857</authid>
+          <description>WGS 84 / Pseudo Mercator</description>
+          <projectionacronym>merc</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="ol_layer_type" value="Google Streets"/>
+      </customproperties>
+    </maplayer>
+    <maplayer minimumScale="0" maximumScale="1e+08" type="plugin" hasScaleBasedVisibilityFlag="0" name="openlayers">
+      <extent>
+        <xmin>-20037508.33999999985098839</xmin>
+        <ymin>-20037508.33999999985098839</ymin>
+        <xmax>20037508.33999999985098839</xmax>
+        <ymax>20037508.33999999985098839</ymax>
+      </extent>
+      <id>OpenLayers_plugin_layer20180115000521410</id>
+      <datasource></datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Google Satellite</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+          <srsid>3857</srsid>
+          <srid>3857</srid>
+          <authid>EPSG:3857</authid>
+          <description>WGS 84 / Pseudo Mercator</description>
+          <projectionacronym>merc</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="ol_layer_type" value="Google Satellite"/>
+      </customproperties>
+    </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>POIs_Rotterdam20171215112818405</id>
       <datasource>./POIs_Rotterdam.shp</datasource>
@@ -992,6 +1113,12 @@ def my_form_open(dialog, layer, feature):
       <previewExpression></previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>58160.64899999999761349</xmin>
+        <ymin>429461.66100000002188608</ymin>
+        <xmax>100087.23099999999976717</xmax>
+        <ymax>445736.53999999997904524</ymax>
+      </extent>
       <id>Roads20180114151649676</id>
       <datasource>./Roads.shp</datasource>
       <keywordList>
@@ -2608,6 +2735,54 @@ def my_form_open(dialog, layer, feature):
         <default field="OPP_TOT" expression=""/>
       </defaults>
       <previewExpression>COALESCE( "P_GESCHEID", '&lt;NULL>' )</previewExpression>
+    </maplayer>
+    <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>421544.52719795139273629</xmin>
+        <ymin>6746730.12489733006805182</ymin>
+        <xmax>535844.46222703717648983</xmax>
+        <ymax>6822032.5191366383805871</ymax>
+      </extent>
+      <id>SatelliteBackground20180115000549665</id>
+      <datasource>./SatelliteBackground.tiff</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>SatelliteBackground</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+          <srsid>3857</srsid>
+          <srid>3857</srid>
+          <authid>EPSG:3857</authid>
+          <description>WGS 84 / Pseudo Mercator</description>
+          <projectionacronym>merc</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="identify/format" value="Value"/>
+      </customproperties>
+      <provider>gdal</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+        <noDataList bandNo="2" useSrcNoData="0"/>
+        <noDataList bandNo="3" useSrcNoData="0"/>
+        <noDataList bandNo="4" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="-1" blueBand="3" greenBand="2" type="multibandcolor" redBand="1">
+          <rasterTransparency/>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <extent>
@@ -4936,15 +5111,14 @@ def my_form_open(dialog, layer, feature):
         <map-layer-style name=""/>
       </map-layer-style-manager>
       <pipe>
-        <rasterrenderer opacity="1" alphaBand="0" classificationMax="29.702" classificationMinMaxOrigin="CumulativeCutFullExtentEstimated" band="1" classificationMin="17.1052" type="singlebandpseudocolor">
-          <rasterTransparency/>
+        <rasterrenderer opacity="1" alphaBand="-1" classificationMax="nan" classificationMinMaxOrigin="Unknown" band="1" classificationMin="nan" type="singlebandpseudocolor">
           <rastershader>
             <colorrampshader colorRampType="INTERPOLATED" clip="0">
-              <item alpha="255" value="17.1" label="17.1" color="#2b83ba"/>
-              <item alpha="255" value="20.3" label="20.3" color="#abdda4"/>
-              <item alpha="255" value="23.4" label="23.4" color="#ffffbf"/>
-              <item alpha="255" value="26.6" label="26.6" color="#fdae61"/>
-              <item alpha="255" value="29.7" label="29.7" color="#d7191c"/>
+              <item alpha="255" value="0" label="" color="#80c0ff"/>
+              <item alpha="255" value="10" label="" color="#00ff00"/>
+              <item alpha="255" value="15" label="" color="#ffff00"/>
+              <item alpha="255" value="19.9999" label="" color="#ff8000"/>
+              <item alpha="255" value="20" label="" color="#ff0000"/>
             </colorrampshader>
           </rastershader>
         </rasterrenderer>
@@ -5524,13 +5698,13 @@ def my_form_open(dialog, layer, feature):
         <value>Hospitals20171215113423404</value>
         <value>Nursing_homes20171215113342241</value>
         <value>POIs_Rotterdam20171215112818405</value>
+        <value>Roads20180114151649676</value>
         <value>Rotterdam_neighbourhoods20171203150537122</value>
         <value>Rotterdam_neighbourhoods_cleaned20171214200731961</value>
         <value>Schools20171215113059861</value>
         <value>industry20180112201222928</value>
         <value>onderlegger20171215110350096</value>
         <value>result_rotterdam_g599_mt2017_j2016_rpgw20171214180139071</value>
-        <value>Roads20180114151649676</value>
       </LayerSnappingList>
       <LayerSnappingEnabledList type="QStringList">
         <value>disabled</value>
@@ -5550,13 +5724,13 @@ def my_form_open(dialog, layer, feature):
         <value>1</value>
         <value>1</value>
         <value>1</value>
+        <value>2</value>
         <value>1</value>
         <value>1</value>
         <value>1</value>
         <value>2</value>
         <value>1</value>
         <value>1</value>
-        <value>2</value>
       </LayerSnappingToleranceUnitList>
       <LayerSnapToList type="QStringList">
         <value>to_vertex_and_segment</value>

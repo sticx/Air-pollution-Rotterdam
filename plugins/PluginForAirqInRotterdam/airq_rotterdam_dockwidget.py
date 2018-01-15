@@ -75,19 +75,19 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
                      "Maximal level: " + str(self.sliderMaxLevel.sliderPosition()) + " ug/m3\n"
                      "\n\n")
 
-            if self.textNotes.toPlainText() != "":
+            if self.textNotesHospitals.toPlainText() != "":
                 fh.write("               USER NOTES\n"
                          "========================================\n"
                          "HOSPITALS\n" +
                          self.textNotesHospitals.toPlainText() + "\n"
                          "\n")
 
-            if self.textNotes.toPlainText() != "":
+            if self.textNotesSchools.toPlainText() != "":
                 fh.write("SCHOOLS\n" +
                          self.textNotesSchools.toPlainText() + "\n"
                          "\n")
 
-            if self.textNotes.toPlainText() != "":
+            if self.textNotesNursingHomes.toPlainText() != "":
                 fh.write("NURSING HOMES\n" +
                          self.textNotesNursingHomes.toPlainText() + "\n"
                          "\n\n")

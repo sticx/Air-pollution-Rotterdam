@@ -43,17 +43,17 @@
        <bool>true</bool>
       </property>
       <attribute name="buttonGroup">
-       <string notr="true">buttonGroupMapOptions</string>
+       <string notr="true">radioGrp</string>
       </attribute>
      </widget>
     </item>
     <item row="25" column="3">
-     <widget class="QRadioButton" name="radioButton_GmapsBgOn">
+     <widget class="QRadioButton" name="radioButtonGmapsBgOn">
       <property name="text">
        <string>Google Maps background (internet)</string>
       </property>
       <attribute name="buttonGroup">
-       <string notr="true">buttonGroupMapOptions</string>
+       <string notr="true">radioGrp</string>
       </attribute>
      </widget>
     </item>
@@ -66,7 +66,7 @@
        <string>Satellite background (offline)</string>
       </property>
       <attribute name="buttonGroup">
-       <string notr="true">buttonGroupMapOptions</string>
+       <string notr="true">radioGrp</string>
       </attribute>
      </widget>
     </item>
@@ -341,12 +341,12 @@
      </widget>
     </item>
     <item row="26" column="3">
-     <widget class="QRadioButton" name="radioButton">
+     <widget class="QRadioButton" name="radioButtonGmapsBgOff">
       <property name="text">
        <string>Google Maps background (offline)</string>
       </property>
       <attribute name="buttonGroup">
-       <string notr="true">buttonGroupMapOptions</string>
+       <string notr="true">radioGrp</string>
       </attribute>
      </widget>
     </item>
@@ -356,6 +356,6 @@
  <resources/>
  <connections/>
  <buttongroups>
-  <buttongroup name="buttonGroupMapOptions"/>
+  <buttongroup name="radioGrp"/>
  </buttongroups>
 </ui>

@@ -224,7 +224,30 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
         legend = self.iface.legendInterface()
         legend.setLayerVisible(layer, self.comboBoxType.currentText() == "NO2")
 
+    def initRadioButtons(self):
+        # legend = self.iface.legendInterface()
+        # # Set Default
+        # self.radioButtonSatBgOn.setChecked(True)
+        # # Create a Group and make it exclusive
+        # self.radioGrp.setExclusive(True)
+        # # Add radio buttons to group
+        # self.radioGrp.addButton(self.radioButtonSatBgOn)
+        # self.radioGrp.addButton(self.radioButtonSatBgOff)
+        # self.radioGrp.addButton(self.radioButtonGmapsBgOn)
+        # self.radioGrp.addButton(self.radioButtonGmapsBgOff)
+        # #connect buttons
+        # self.radioButtonSatBgOn.toggled.connect(self.radioButtonSatBgOn)
+        # self.radioButtonSatBgOn.toggled.connect(self.radioButtonSatBgOff)
+        # self.radioButtonSatBgOn.toggled.connect(self.radioButtonGmapsBgOn)
+        # self.radioButtonSatBgOn.toggled.connect(self.radioButtonGmapsBgOff)
 
+        # self.b1 = radioButtonSatBgOn("Google Satellite")
+        # self.b1.setChecked(True)
+        # self.b1.toggled.connect(lambda: self.btnstate(self.b1))
+        #
+        # self.b2 = QRadioButton("Button2")
+        # self.b2.toggled.connect(lambda: self.btnstate(self.b2))
+       # https: // stackoverflow.com / questions / 1753939 / qt - python - radiobutton - activate - event
     def initCheckBoxes(self):
         legend = self.iface.legendInterface()
         self.checkBoxHospitals.setChecked(legend.isLayerVisible(self.getLayer("Hospitals")))

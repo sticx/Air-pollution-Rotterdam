@@ -5,43 +5,43 @@
   <evaluateDefaultValues active="0"/>
   <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="Schools20171215113059861" source="C:/Users/HP EliteBook 8560p/.qgis2/python/plugins/PluginForAirqInRotterdam/sample_data2/Schools.shp" name="Schools">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="Schools20171215113059861" source="Schools.shp" name="Schools">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="Hospitals20171215113423404" source="C:/Users/HP EliteBook 8560p/.qgis2/python/plugins/PluginForAirqInRotterdam/sample_data2/Hospitals.shp" name="Hospitals">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="Hospitals20171215113423404" source="Hospitals.shp" name="Hospitals">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="Nursing_homes20171215113342241" source="C:/Users/HP EliteBook 8560p/.qgis2/python/plugins/PluginForAirqInRotterdam/sample_data2/Nursing_homes.shp" name="Nursing_homes">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="Nursing_homes20171215113342241" source="Nursing_homes.shp" name="Nursing_homes">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="industry20180112201222928" source="C:/Users/HP EliteBook 8560p/.qgis2/python/plugins/PluginForAirqInRotterdam/sample_data2/industry.shp" name="Industry">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="industry20180112201222928" source="industry.shp" name="Industry">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Roads20180114151649676" source="C:/Users/HP EliteBook 8560p/.qgis2/python/plugins/PluginForAirqInRotterdam/sample_data2/Roads.shp" name="Roads">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Roads20180114151649676" source="Roads.shp" name="Roads">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Rotterdam_neighbourhoods_cleaned20171214200731961" source="C:/Users/HP EliteBook 8560p/.qgis2/python/plugins/PluginForAirqInRotterdam/sample_data2/Rotterdam_neighbourhoods_cleaned.shp" name="Rotterdam_neighbourhoods_cleaned">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Rotterdam_neighbourhoods_cleaned20171214200731961" source="Rotterdam_neighbourhoods_cleaned.shp" name="Rotterdam_neighbourhoods_cleaned">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="0" providerKey="gdal" checked="Qt::Unchecked" id="no2_concentration20171215113949880" source="C:/Users/HP EliteBook 8560p/.qgis2/python/plugins/PluginForAirqInRotterdam/sample_data2/no2_concentration.tif" name="no2_concentration">
+    <layer-tree-layer expanded="0" providerKey="gdal" checked="Qt::Unchecked" id="no2_concentration20171215113949880" source="no2_concentration.tif" name="no2_concentration">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="0" providerKey="gdal" checked="Qt::Unchecked" id="pm10_concentration20171215113808971" source="C:/Users/HP EliteBook 8560p/.qgis2/python/plugins/PluginForAirqInRotterdam/sample_data2/pm10_concentration.tif" name="pm10_concentration">
+    <layer-tree-layer expanded="0" providerKey="gdal" checked="Qt::Unchecked" id="pm10_concentration20171215113808971" source="pm10_concentration.tif" name="pm10_concentration">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="0" providerKey="gdal" checked="Qt::Checked" id="pm25_concentration20171215113858048" source="C:/Users/HP EliteBook 8560p/.qgis2/python/plugins/PluginForAirqInRotterdam/sample_data2/pm25_concentration.tif" name="pm25_concentration">
+    <layer-tree-layer expanded="0" providerKey="gdal" checked="Qt::Checked" id="pm25_concentration20171215113858048" source="pm25_concentration.tif" name="pm25_concentration">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="" checked="Qt::Unchecked" id="OpenLayers_plugin_layer20180115000521410" source="C:/Users/HP EliteBook 8560p/.qgis2/python/plugins/PluginForAirqInRotterdam/sample_data2" name="Google Satellite">
+    <layer-tree-layer expanded="1" providerKey="" checked="Qt::Unchecked" id="OpenLayers_plugin_layer20180115000521410" source="" name="Google Satellite">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="" checked="Qt::Unchecked" id="OpenLayers_plugin_layer20180114231347922" source="C:/Users/HP EliteBook 8560p/.qgis2/python/plugins/PluginForAirqInRotterdam/sample_data2" name="Google Streets">
+    <layer-tree-layer expanded="1" providerKey="" checked="Qt::Unchecked" id="OpenLayers_plugin_layer20180114231347922" source="" name="Google Streets">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="gdal" checked="Qt::Checked" id="SatelliteBackground20180115000549665" source="C:/Users/HP EliteBook 8560p/.qgis2/python/plugins/PluginForAirqInRotterdam/sample_data2/SatelliteBackground.tiff" name="SatelliteBackground">
+    <layer-tree-layer expanded="1" providerKey="gdal" checked="Qt::Checked" id="SatelliteBackground20180115000549665" source="SatelliteBackground.tiff" name="SatelliteBackground">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="gdal" checked="Qt::Unchecked" id="GmapBackground20180114231728226" source="C:/Users/HP EliteBook 8560p/.qgis2/python/plugins/PluginForAirqInRotterdam/sample_data2/GmapBackground.tiff" name="GmapBackground">
+    <layer-tree-layer expanded="1" providerKey="gdal" checked="Qt::Unchecked" id="GmapBackground20180114231728226" source="GmapBackground.tiff" name="GmapBackground">
       <customproperties/>
     </layer-tree-layer>
   </layer-tree-group>
@@ -1553,7 +1553,7 @@ def my_form_open(dialog, layer, feature):
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerTransparency>0</layerTransparency>
-      <displayfield>P_GESCHEID</displayfield>
+      <displayfield>BU_NAAM</displayfield>
       <label>0</label>
       <labelattributes>
         <label fieldname="" text="Label"/>
@@ -1693,7 +1693,7 @@ def my_form_open(dialog, layer, feature):
         <default field="A_BEDV" expression=""/>
         <default field="OPP_TOT" expression=""/>
       </defaults>
-      <previewExpression>COALESCE( "P_GESCHEID", '&lt;NULL>' )</previewExpression>
+      <previewExpression>COALESCE( " ", '&lt;NULL>' )</previewExpression>
     </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
       <extent>

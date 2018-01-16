@@ -52,8 +52,8 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
         if not(self.layerExists("Google Satellite")) or not(self.layerExists("Google Streets")):
             QMessageBox.warning(self, "OpenLayers Plugin not installed",
-                                "The OpenLayers Plugin might not be installed correctly. "
-                                "Background layers might not be displayed correctly.",
+                                "The OpenLayers Plugin might not be installed on your system. <br>"
+                                "It's not possible to use more advanced background layers without this plugin.",
                                 QMessageBox.Ok)
             self.radioButtonSatBgOn.setEnabled(False)
             self.radioButtonGmapsBgOn.setEnabled(False)

@@ -158,7 +158,7 @@
            <string>The Open Layers Plugin and an internet connection is required to use this background</string>
           </property>
           <property name="text">
-           <string>Satellite background (Open Layers Plugin)</string>
+           <string>Satellite background (OpenLayers Plugin)</string>
           </property>
           <property name="checked">
            <bool>false</bool>
@@ -174,7 +174,7 @@
            <string>The Open Layers Plugin and an internet connection is required to use this background</string>
           </property>
           <property name="text">
-           <string>Google Maps background (Open Layers Plugin)</string>
+           <string>Google Maps background (OpenLayers Plugin)</string>
           </property>
           <attribute name="buttonGroup">
            <string notr="true">radioGrp</string>

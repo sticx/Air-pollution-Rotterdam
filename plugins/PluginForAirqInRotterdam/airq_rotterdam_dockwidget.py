@@ -83,7 +83,7 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
             fh.write("Pollution type: " + self.comboBoxType.currentText() + "\n"
                      "Maximal level: " + str(self.sliderMaxLevel.sliderPosition()) + " ug/m3\n"
-                     "\n\n")
+                     "\n\n\n")
 
             if self.textNotesHospitals.toPlainText() != "":
                 fh.write("               USER NOTES\n"
@@ -92,19 +92,19 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
                          "HOSPITALS\n"
                          "----------------------------------------\n" +
                          self.textNotesHospitals.toPlainText() + "\n"
-                         "\n")
+                         "\n\n")
 
             if self.textNotesSchools.toPlainText() != "":
                 fh.write("SCHOOLS\n"
                          "----------------------------------------\n" +
                          self.textNotesSchools.toPlainText() + "\n"
-                         "\n")
+                         "\n\n")
 
             if self.textNotesNursingHomes.toPlainText() != "":
                 fh.write("NURSING HOMES\n"
                          "----------------------------------------\n" +
                          self.textNotesNursingHomes.toPlainText() + "\n"
-                         "\n\n")
+                         "\n\n\n")
 
             if self.generateInfo(False) != "":
                 fh.write("       NEIGHBOURHOOD INFORMATION\n"
@@ -116,6 +116,7 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
 
     def initZoomButtons(self):
         self.iface.setActiveLayer(self.getLayer("Rotterdam_neighbourhoods_cleaned"))
+        self.iface.actionZoomToLayer().trigger()
         self.zoomSelectionButton.clicked.connect(self.iface.actionZoomToSelected().trigger)
         self.fullZoomButton.clicked.connect(self.iface.actionZoomToLayer().trigger)
 
@@ -164,6 +165,8 @@ class PluginForAirqInRotterdamDockWidget(QtGui.QDockWidget, FORM_CLASS):
             info += "No. of businesses: {}\n".format(i.attribute("A_BEDV"))
             info += "No. of industrial businesses: {}\n".format(i.attribute("A_BED_BF"))
             info += "\n"
+            if not(is_html):
+                info += "\n"
 
         if is_html:
             info += "</pre>"

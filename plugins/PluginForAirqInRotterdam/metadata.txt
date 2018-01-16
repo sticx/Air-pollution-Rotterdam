@@ -9,7 +9,7 @@
 [general]
 name=Plugin For Air Quality In Rotterdam
 qgisMinimumVersion=2.0
-description=Plugin For see effect of Air Quality In Rotterdam
+description=Plugin to see effect of Air Pollution in Rotterdam
 version=0.1
 author=Group05_2017
 email=juanchodpg@hotmail.com
@@ -26,7 +26,7 @@ repository=github.com
 # changelog=
 
 # Tags are comma separated with spaces allowed
-tags=
+tags= GEO1005, air pollution, rotterdam, SDSS
 
 homepage=
 category=Plugins
